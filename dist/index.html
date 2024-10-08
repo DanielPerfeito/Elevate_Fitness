@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elevate Fitness</title>
     <!--estilos Css-->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <!--Google fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +20,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!--Scripts-->
     <script
@@ -30,21 +31,30 @@
   </head>
   <body>
     <main>
+      <!--Section Home-->
       <section id="home">
         <!--Header-->
         <header id="header">
+          <!--Video de background-->
           <video autoplay muted loop class="background-video">
             <source src="../assets/montanha-opaca.mp4" type="video/mp4" />
           </video>
+          <!--Menu do header-->
           <div id="menu">
             <img src="../assets/logo-EF-Oficial.png" id="logo-header" alt="Logo Elevate Fitness">
-              <nav id="nav-bar-menu">
-                <a href="#">HOME</a>
-                <a href="#">SOBRE</a>
-                <a href="#">TREINOS</a>
-                <a href="#">CONTATO</a>
-              </nav>
+            <!--Menu de navegação (Inativo no mobale)-->
+            <nav id="nav-bar-menu">
+              <a href="#">HOME</a>
+              <a href="#">SOBRE</a>
+              <a href="#">TREINOS</a>
+              <a href="#">CONTATO</a>
+            </nav>
+            <!--Botão para abrir menu lateral (Ativo somente no mobile)-->
+            <button id="btn-barra-lateral-abrir" class="btn">
+              <i class="bi bi-list"></i>
+            </button>
           </div>
+          <!--Imagen representativa-->
           <img id="logo" src="../assets/Inserir um título (3) (1).png" alt="" />
         </header>
       </section>
@@ -57,6 +67,9 @@
       <!--Seção Contato-->
       <section id="contato">
       </section>
-        </body>
+      <!--Footer-->
+      <footer>
+      </footer>
     </main>
+  </body>
 </html>

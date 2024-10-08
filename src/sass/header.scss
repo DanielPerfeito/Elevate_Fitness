@@ -1,0 +1,56 @@
+
+
+header {
+    @include display-layout(flex, column, space-between, center, 15px);
+    @include box-layout(100vh, 100%, 0, 0, none);
+    position: relative;
+    overflow: hidden;
+   
+
+    .background-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+
+
+    }
+
+    #menu{
+        @include display-layout(flex, row, space-around, center, 15px);
+        @include box-layout(auto, 100%, 0 15px 0 10px, 10px, none);
+
+        #logo-header{
+            width: 65%;
+            height: 100%;
+            background-color: red;
+        }
+
+
+        #nav-bar-menu{
+            display: none;
+        }
+
+        #btn-barra-lateral-abrir{
+            @include display-layout(flex, row, center, center, 15px);
+            color: $cor-clara;
+            background-color: $cor-escura;
+            font-size: 1.8rem;
+            font-weight: bold;
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            z-index: 1;
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+    #logo{
+        height: 70vh;
+    }
+}
