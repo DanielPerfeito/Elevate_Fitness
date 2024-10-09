@@ -22,12 +22,15 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!--Scripts-->
+    <!--Scripts Bootstrap-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!--Scripts Javascript-->
+    <script src="../src/index.js" defer></script>
   </head>
   <body>
     <main>
@@ -41,7 +44,7 @@
           </video>
           <!--Menu do header-->
           <div id="menu">
-            <img src="../assets/logo-EF-Oficial.png" id="logo-header" alt="Logo Elevate Fitness">
+            <!--<img src="../assets/logo-EF-Oficial.png" id="logo-header" alt="Logo Elevate Fitness">-->
             <!--Menu de navegação (Inativo no mobale)-->
             <nav id="nav-bar-menu">
               <a href="#">HOME</a>
@@ -50,14 +53,29 @@
               <a href="#">CONTATO</a>
             </nav>
             <!--Botão para abrir menu lateral (Ativo somente no mobile)-->
-            <button id="btn-barra-lateral-abrir" class="btn">
+            <button id="btn-menu-retratil-abrir" class="btn" onclick="abrirMenu()">
               <i class="bi bi-list"></i>
             </button>
           </div>
+
+        
           <!--Imagen representativa-->
-          <img id="logo" src="../assets/Inserir um título (3) (1).png" alt="" />
+          <img id="logo" src="../assets/logo-EF.png" alt="" />
         </header>
       </section>
+      <nav id="menu-retratil-mobile">
+        <button id="btn-menu-retratil-fechar" class="btn" onclick="fecharMenu()">
+          <i class="bi bi-x-lg m-1"></i>
+        </button>
+
+        <img id="icone-logo" src="../assets/Icon-EF.png" alt="logo-EF">
+        <a href="#" onclick="fecharMenu()">HOME</a>
+        <a href="#" onclick="fecharMenu()">SOBRE</a>
+        <a href="#" onclick="fecharMenu()">TREINOS</a>
+        <a href="#" onclick="fecharMenu()">CONTATO</a>
+
+        <a href="#" id="chamada-action-01" clas="btn">Agendar aula experimental <i class="bi bi-whatsapp"></i></a>
+      </nav>
       <!--Seção Sobre-->
       <section id="sobre">
       </section>

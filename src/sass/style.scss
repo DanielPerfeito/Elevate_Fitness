@@ -9,6 +9,9 @@
 /*Variáveis*/
 $cor-escura: #000000;
 $cor-clara: #ffffff;
+$cor-vermelho-claro: #b10808;
+$cor-vermelho-escuro: #5a0303;
+$fonte-padrao: "Bebas Neue", sans-serif;
 
 /*Mixins*/
 
@@ -26,6 +29,11 @@ $cor-clara: #ffffff;
     margin: $margin;
     padding: $padding;
     border-radius: $border-radius
+}
+
+body{
+    font-family: $fonte-padrao;
+    font-weight: bold;
 }
 
 
