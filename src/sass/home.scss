@@ -1,0 +1,91 @@
+/*Section home*/
+#home {
+    @include box-layout(100vh, 100%, 0, 0, none);
+
+    /*Header*/
+    header {
+        @include display-layout(flex, column, space-between, center, 15px);
+        @include box-layout(50%, 100%, 0, 0, none);
+        position: relative;
+        overflow: hidden;
+
+        /*Video do background*/
+        .background-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        /*Barra de navegação superior (Inativa em mobile)*/
+        #menu {
+            @include display-layout(flex, row, start, center, 15px);
+            @include box-layout(auto, 100%, 0 15px 0 10px, 10px, none);
+
+            #logo-header {
+                width: 70%;
+            }
+
+            #nav-bar-menu {
+                display: none;
+            }
+
+            /*Botão do menu retrátil (ativo somente em mobile)*/
+            #btn-menu-retratil-abrir {
+                @include display-layout(flex, row, center, center, 15px);
+                color: $cor-clara;
+                background-color: $cor-escura;
+                font-size: 1.8rem;
+                font-weight: bold;
+                position: fixed;
+                right: 10px;
+                top: 10px;
+                z-index: 1;
+                height: 50px;
+                width: 50px;
+                transition: .4s;
+            }
+        }
+
+        #logo {
+            height: 80%;
+        }
+    }
+
+    /*Slogan*/
+    #slogan {
+        @include display-layout(flex, column, start, center, 40px);
+        @include box-layout(50%, 100%, 0, 0, none);
+        background-color: $cor-escura;
+
+        h1 {
+            background-color: $cor-escura;
+            color: $cor-clara;
+            padding: 15px 30px;
+            text-align: center;
+            font-family: $fonte-padrao;
+            font-size: 2.5rem;
+        }
+
+        #chamada-action-02 {
+            background-image: linear-gradient(to top, $cor-vermelho-escuro, $cor-vermelho-claro );
+            padding: 5px 15px 3px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: $cor-clara;
+            font-family: $fonte-padrao;
+            letter-spacing: 2px;
+            font-size: 1.2rem;
+            transition: .4s;
+
+            &:hover {
+                color: $cor-clara;
+                transform: scale(1.05);
+            }
+        }
+    }
+}

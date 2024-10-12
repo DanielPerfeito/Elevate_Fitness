@@ -1,0 +1,49 @@
+/*Menu retratil (ativo somente em mobile)*/
+#menu-retratil-mobile {
+    @include display-layout(flex, column, center, center, 5px);
+    @include box-layout(0, 100%, 0, 0, 0);
+    overflow: hidden;
+    position: fixed;
+    background-color: $cor-escura;
+    border-bottom: solid $cor-vermelho-claro 6px;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    transition: .4s;
+
+    #btn-menu-retratil-fechar {
+        @include display-layout(flex, row, center, center, 10px);
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $cor-clara;
+        height: 50px;
+        width: 50px;
+    }
+
+    #icone-logo {
+        height: 100px;
+        margin-bottom: 20px;
+        padding-top: 15PX;
+    }
+
+    a {
+        color: $cor-clara;
+        font-family: $fonte-padrao;
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-size: 1.8rem;
+        transition: .4s;
+
+        &:hover {
+            color: $cor-vermelho-claro;
+        }
+    }
+
+    p {
+        margin-top: 10px;
+        font-family: $fonte-padrao;
+    }
+}
