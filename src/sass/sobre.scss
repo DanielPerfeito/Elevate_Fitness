@@ -57,14 +57,19 @@
         }
 
         #visao-estrategica-cards {
-            @include display-layout(flex, column, space-around, center, 10px);
+            @include display-layout(flex, column, space-around, center, 25px);
 
             .card-VE {
                 @include display-layout(flex, column, space-evenly, center, 10px);
-                @include box-layout(500px, 320px, 0, 30px, 30px);
+                @include box-layout(420px, 320px, 0, 20px, 30px 30px 0 0);
                 text-align: center;
-                background-color: gray;
-
+                color: $cor-clara;
+                background-image: linear-gradient( to top, $cor-escura, #0a0a0a);
+                border-bottom: solid $cor-vermelho-escuro 8px;
+                border-top: solid $cor-vermelho-escuro 8px;
+                border-left: solid 1px #0a0a0a;
+                border-right: solid 1px #0a0a0a;
+            
                 img {
                     height: 20%;
                 }
