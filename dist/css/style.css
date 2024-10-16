@@ -63,9 +63,6 @@ body {
   border-radius: none;
   /*Botão do menu retrátil (ativo somente em mobile)*/
 }
-#home header #menu #logo-header {
-  width: 70%;
-}
 #home header #menu #nav-bar-menu {
   display: none;
 }
@@ -113,7 +110,7 @@ body {
 }
 #home #slogan #chamada-action-02 {
   background-image: linear-gradient(to top, #5a0303, #b10808);
-  padding: 5px 15px 3px;
+  padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
   color: #ffffff;
@@ -184,8 +181,109 @@ body {
   font-family: "Bebas Neue", sans-serif;
 }
 
+/*SEÇÃO SOBRE*/
+/*Seção Sobre*/
 #sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  font-weight: none;
+  text-decoration: none;
+  color: none;
+  /*Div texto sobre*/
+  /*Div Visão estratégica*/
+}
+#sobre h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  font-weight: none;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: #000000 2px 2px 2px;
+  margin: 25px;
+}
+#sobre #div-texto-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  background-image: url(./assets/back-02.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+#sobre #div-texto-sobre #filtro-01 {
+  padding: 15px;
+  background-image: linear-gradient(to top, #000000, rgba(255, 255, 255, 0.1450980392));
+  width: 100%;
+}
+#sobre #div-texto-sobre #filtro-01 #container-texto-sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+#sobre #div-texto-sobre #filtro-01 #container-texto-sobre img {
+  width: 200px;
+  filter: drop-shadow(2px 5px 1px #000000);
+}
+#sobre #div-texto-sobre #filtro-01 #container-texto-sobre p {
+  margin: 0;
+  color: #ffffff;
+  margin-bottom: 50px;
+  text-shadow: #000000 2px 2px 2px;
+}
+#sobre #visao-estrategica {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
   background-color: #000000;
+}
+#sobre #visao-estrategica h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8rem;
+  font-weight: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+#sobre #visao-estrategica #visao-estrategica-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+#sobre #visao-estrategica #visao-estrategica-cards .card-VE {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  height: 500px;
+  width: 320px;
+  margin: 0;
+  padding: 30px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: gray;
+}
+#sobre #visao-estrategica #visao-estrategica-cards .card-VE img {
+  height: 20%;
+}
+#sobre #visao-estrategica #visao-estrategica-cards .card-VE p {
+  max-height: 60%;
+  margin: 0;
+  text-align: center;
+}
+#sobre #visao-estrategica #visao-estrategica-cards .card-VE #p-valores {
+  text-align: start;
 }
 
 /*# sourceMappingURL=style.css.map */

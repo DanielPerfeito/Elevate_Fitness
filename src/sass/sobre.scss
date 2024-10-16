@@ -1,5 +1,85 @@
+/*SEÇÃO SOBRE*/
 
+/*Seção Sobre*/
+#sobre {
+    @include display-layout(flex, column, center, center, 0);
+    @include text-layout($fonte-padrao, $fonte-size-texto, none, none, none);
 
-#sobre{
-    background-color: #000000;
+    h2{
+        @include text-layout($fonte-padrao, $fonte-size-titulo, none, none, $cor-clara);
+        text-shadow: $cor-escura 2px 2px 2px;
+        margin: 25px;
+    }
+
+    /*Div texto sobre*/
+    #div-texto-sobre {
+        @include display-layout(flex, column, center, center, 10px);
+        text-align: center;
+        background-image: url(./assets/back-02.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        #filtro-01{
+            padding: 15px;
+            background-image: linear-gradient(to top, #000000, #ffffff25);
+
+            width: 100%;
+            #container-texto-sobre{
+
+                @include display-layout(flex, column, center, center, 15px);
+
+                img {
+                width: 200px;
+                filter: drop-shadow(2px 5px 1px $cor-escura);
+                }
+    
+            p {
+                margin: 0;
+                color: $cor-clara;
+                margin-bottom: 50px;
+                text-shadow: $cor-escura 2px 2px 2px;
+            }
+        }
+        }
+
+        
+        
+    }
+    /*Div Visão estratégica*/
+    #visao-estrategica {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        background-color: $cor-escura;
+
+        h2{
+            @include text-layout($fonte-padrao, $fonte-size-subtitulo, none, none, $cor-clara);
+        }
+
+        #visao-estrategica-cards {
+            @include display-layout(flex, column, space-around, center, 10px);
+
+            .card-VE {
+                @include display-layout(flex, column, space-evenly, center, 10px);
+                @include box-layout(500px, 320px, 0, 30px, 30px);
+                text-align: center;
+                background-color: gray;
+
+                img {
+                    height: 20%;
+                }
+
+                p {
+                    max-height: 60%;
+                    margin: 0;
+                    text-align: center;
+                }
+
+                #p-valores {
+                    text-align: start;
+                }
+            }
+        }
+    }
 }
+
