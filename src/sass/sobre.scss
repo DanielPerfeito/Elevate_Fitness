@@ -69,6 +69,12 @@
                 border-top: solid $cor-vermelho-escuro 8px;
                 border-left: solid 1px #0a0a0a;
                 border-right: solid 1px #0a0a0a;
+                transition: .4s;
+
+                &:hover{
+                    transform: scale(1.05);
+                    box-shadow: 2px 2px 40px $cor-vermelho-escuro;
+                }
             
                 img {
                     height: 20%;
@@ -85,6 +91,51 @@
                 }
             }
         }
+    }
+
+    /*Equipe*/
+    #equipe{
+        background-color: antiquewhite;
+        width: 100%;
+        @include display-layout(flex, column, center, center, 20px);
+        padding: 100px;
+
+        #container-professores{
+            background-color: aqua;
+            @include display-layout(flex, column, center, center, 20px);
+
+            .card-trainer{
+                @include box-layout(500px, 300px, 0, 0, 0);
+                overflow: hidden;
+
+                .div-back-trainer{
+                    @include display-layout(flex, column, center, center, 0);
+                    background-image: url(./assets/cleiton-silva.jpg);
+                    background-size: cover;
+                    @include box-layout(100%, 100%, 0, 0, 0);
+                    transition: .4s;
+
+                    .div-info-trainer{
+                        transition: .4s;
+                        background-color: grey;
+                    }
+
+                    &:hover{
+                        transform: scale(1.2);
+
+                        .div-info-trainer{
+                            transform: scale(0.85);
+                            width: 100%;
+                            padding: 0 15px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+
     }
 }
 

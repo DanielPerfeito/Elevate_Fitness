@@ -196,10 +196,11 @@ body {
   color: none;
   /*Div texto sobre*/
   /*Div Visão estratégica*/
+  /*Equipe*/
 }
 #sobre h2 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: none;
   text-decoration: none;
   color: #ffffff;
@@ -278,6 +279,11 @@ body {
   border-top: solid #5a0303 8px;
   border-left: solid 1px #0a0a0a;
   border-right: solid 1px #0a0a0a;
+  transition: 0.4s;
+}
+#sobre #visao-estrategica #visao-estrategica-cards .card-VE:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 40px #5a0303;
 }
 #sobre #visao-estrategica #visao-estrategica-cards .card-VE img {
   height: 20%;
@@ -289,6 +295,59 @@ body {
 }
 #sobre #visao-estrategica #visao-estrategica-cards .card-VE #p-valores {
   text-align: start;
+}
+#sobre #equipe {
+  background-color: antiquewhite;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 100px;
+}
+#sobre #equipe #container-professores {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#sobre #equipe #container-professores .card-trainer {
+  height: 500px;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+#sobre #equipe #container-professores .card-trainer .div-back-trainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background-image: url(./assets/cleiton-silva.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  transition: 0.4s;
+}
+#sobre #equipe #container-professores .card-trainer .div-back-trainer .div-info-trainer {
+  transition: 0.4s;
+  background-color: grey;
+}
+#sobre #equipe #container-professores .card-trainer .div-back-trainer:hover {
+  transform: scale(1.2);
+}
+#sobre #equipe #container-professores .card-trainer .div-back-trainer:hover .div-info-trainer {
+  transform: scale(0.85);
+  width: 100%;
+  padding: 0 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
