@@ -1,3 +1,5 @@
+
+
 /*SEÇÃO SOBRE*/
 
 /*Seção Sobre*/
@@ -95,44 +97,106 @@
 
     /*Equipe*/
     #equipe{
-        background-color: antiquewhite;
+
         width: 100%;
         @include display-layout(flex, column, center, center, 20px);
-        padding: 100px;
+        padding: 30px;
+        background-image: url(./assets/background-alteres-gym.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
 
         #container-professores{
-            background-color: aqua;
+            
             @include display-layout(flex, column, center, center, 20px);
-
-            .card-trainer{
-                @include box-layout(500px, 300px, 0, 0, 0);
+            .card{
+                border-radius: 0;
+                height: 500px;
+                width: 320px;
                 overflow: hidden;
+                transition: .2s;
+                border: none;
+                box-shadow: 3px 3px 3px $cor-escura;
 
-                .div-back-trainer{
-                    @include display-layout(flex, column, center, center, 0);
-                    background-image: url(./assets/cleiton-silva.jpg);
-                    background-size: cover;
-                    @include box-layout(100%, 100%, 0, 0, 0);
-                    transition: .4s;
 
-                    .div-info-trainer{
-                        transition: .4s;
-                        background-color: grey;
-                    }
 
-                    &:hover{
-                        transform: scale(1.2);
+                img{
+                    transition:  .4s;
+                    border-radius: 0;
+                }
 
-                        .div-info-trainer{
-                            transform: scale(0.85);
-                            width: 100%;
-                            padding: 0 15px;
-                        }
+                &:hover{
+                    box-shadow: 3px 3px 3px $cor-escura;
+                    img{
+                        transform: scale(1.1);
                     }
                 }
-            }
 
+                .card-img-overlay{
+
+                    @include display-layout(flex, column, end, center, 0);
+                    padding: 0;
+
+                    .info-card{
+                        @include display-layout(flex, column, space-between, center, 0);
+                        background-color: #0000008f;
+                        color: $cor-clara;
+                        padding: 0px 10px 10px 10px;
+                        border-bottom: solid 8px $cor-vermelho-claro;
+                       
+                        height: 240px;
+
+                        h5{
+                            font-size: 1.5rem;
+
+                            background-image: linear-gradient( to left, $cor-escura, $cor-vermelho-claro);
+                            padding: 10px 15px;
+                            border-radius: 0 0 10px 10px;
+                        }
+                        h6{
+                            font-size: 1.2rem;
+                            text-shadow: 2px 2px 2px $cor-escura;
+                    
+                        }
+                        p{
+                            font-size: 1.1rem;
+                            text-align: center;
+                            text-shadow: 2px 2px 2px $cor-escura;
+                            
+                        }
+
+                        .social-links{
+                            @include display-layout(flex, row, center, center, 30px);
+
+                            a{color: $cor-clara;
+                                font-size: 1.6rem;
+                                transition: .4s;
+
+                                &:hover{
+                                    
+                                    color: $cor-vermelho-claro;
+                                }
+
+
+                            }
+
+                           
+                            
+
+                            &:hover{
+                                color: $cor-vermelho-claro;
+                            }
+                        }
+                        
+                    }
+
+            
+                    
+                }
+            }
+            
         }
+            
 
 
 
