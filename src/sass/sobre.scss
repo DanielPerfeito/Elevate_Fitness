@@ -53,30 +53,31 @@
         padding: 15px;
         text-align: center;
         background-color: $cor-escura;
+        border-bottom: solid 6px $cor-vermelho-claro;
+
+    
 
         h2{
             @include text-layout($fonte-padrao, $fonte-size-subtitulo, none, none, $cor-clara);
+            margin: 15px
         }
 
         #visao-estrategica-cards {
-            @include display-layout(flex, column, space-around, center, 25px);
+            @include display-layout(flex, column, space-around, center, 0);
+            padding: 30px 30px 100px;
+
+            @media screen and (min-width: 950px){
+                @include display-layout(flex, row, center, center, 0);
+            }
+
+          
 
             .card-VE {
                 @include display-layout(flex, column, space-evenly, center, 10px);
-                @include box-layout(420px, 320px, 0, 20px, 30px 30px 0 0);
+                @include box-layout(420px, 320px, 0, 20px, 0);
                 text-align: center;
                 color: $cor-clara;
-                background-image: linear-gradient( to top, $cor-escura, #0a0a0a);
-                border-bottom: solid $cor-vermelho-escuro 8px;
-                border-top: solid $cor-vermelho-escuro 8px;
-                border-left: solid 1px #0a0a0a;
-                border-right: solid 1px #0a0a0a;
-                transition: .4s;
-
-                &:hover{
-                    transform: scale(1.05);
-                    box-shadow: 2px 2px 40px $cor-vermelho-escuro;
-                }
+                
             
                 img {
                     height: 20%;
@@ -92,6 +93,58 @@
                     text-align: start;
                 }
             }
+
+            #card-missao{
+                background-image: linear-gradient(to left, $cor-escura, $cor-vermelho-escuro);
+                border: solid 3px $cor-escura;
+                border-top: solid 3px $cor-vermelho-claro;
+                border-left: solid 3px $cor-vermelho-claro ;
+                border-bottom: none;
+                border-right: none;
+
+                @media screen and (min-width: 950px){
+                    background-image: linear-gradient(to bottom, $cor-escura, $cor-vermelho-escuro);
+
+                    border-top: none;
+                    border-left: solid 3px $cor-vermelho-claro;
+                    border-bottom: solid 3px $cor-vermelho-claro;
+                    border-right: none;
+                }
+            }
+
+            #card-visao{
+                background-image: linear-gradient(to right, $cor-escura, $cor-vermelho-escuro);
+                border-top: solid 3px $cor-vermelho-claro;
+                border-right: solid 3px $cor-vermelho-claro ;
+                border-bottom: none ;
+                border-left: none ;
+
+                @media screen and (min-width: 950px){
+                    background-image: linear-gradient(to top, $cor-escura, $cor-vermelho-escuro);
+
+                    border-top: solid 3px $cor-vermelho-claro;
+                    border-left: solid 3px $cor-vermelho-claro;
+                    border-bottom: none;
+                    border-right: none;
+                }
+            }
+
+            #card-valores{
+                background-image: linear-gradient(to left, $cor-escura, $cor-vermelho-escuro);
+                border-top: solid 3px $cor-vermelho-claro;
+                border-left: solid 3px $cor-vermelho-claro;
+                border-bottom: solid 3px $cor-vermelho-claro;
+                border-right: none;
+
+                @media screen and (min-width: 950px){
+                    background-image: linear-gradient(to bottom, $cor-escura, $cor-vermelho-escuro);
+
+                    border-top: none;
+                    border-left: solid 3px $cor-vermelho-claro;
+                    border-bottom: solid 3px $cor-vermelho-claro;
+                    border-right: solid 3px $cor-vermelho-claro;
+                }
+            }
         }
     }
 
@@ -100,15 +153,22 @@
 
         width: 100%;
         @include display-layout(flex, column, center, center, 20px);
-        padding: 30px;
+        padding: 30px 30px 100px;
         background-image: url(./assets/background-alteres-gym.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
 
+        
+
         #container-professores{
             
             @include display-layout(flex, column, center, center, 20px);
+
+            @media screen and (min-width: 768px){
+                @include display-layout(flex, row, center, center, 10px);
+                flex-wrap: wrap;
+            }
             .card{
                 border-radius: 0;
                 height: 500px;
