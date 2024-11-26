@@ -160,8 +160,15 @@
         background-attachment: fixed;
 
         
+        h2{
+            @include text-layout($fonte-padrao, $fonte-size-subtitulo, none, none, $cor-clara);
+            margin: 15px
+        }
 
+        
+        /*Div Proffesores*/
         #container-professores{
+
             
             @include display-layout(flex, column, center, center, 20px);
 
@@ -256,7 +263,68 @@
             }
             
         }
-            
+          
+        /*Div Academia*/
+        .academia{
+           
+            @include display-layout(flex, column, center, center, 10px);
+            width: 320px;
+
+            h2{
+                @include text-layout($fonte-padrao, $fonte-size-subtitulo, none, none, $cor-clara);
+                margin: 15px
+            }
+
+            .nossa-academia{
+               
+                @include display-layout(flex, column, center, center, 0);
+
+
+                p{
+                    @include box-layout(auto, auto, 0, 20px, 10px 10px 0 0);
+                    text-align: center;
+                    
+                    color: $cor-clara;
+                    background-image: linear-gradient(to top, $cor-vermelho-escuro, #00000085);
+        
+                   
+        
+                }
+
+                #carouselExampleCaptions{
+                    max-width: 500px;
+                    max-height: 500px;
+                    border-bottom: solid 8px $cor-vermelho-claro;
+
+                    
+
+                    h5{
+                        text-shadow: 1px 1px 1px $cor-escura;
+                    }
+
+                }
+            }
+
+            a{
+                width: 320px;
+                background-image: linear-gradient(to top, $cor-vermelho-escuro, $cor-vermelho-claro );
+                padding: 10px 15px;
+                border-radius: 5px;
+                text-decoration: none;
+                color: $cor-clara;
+                font-family: $fonte-padrao;
+                letter-spacing: 2px;
+                font-size: 1.2rem;
+                transition: .4s;
+                border: none;
+                margin-top: 20px;
+    
+                &:hover {
+                    color: $cor-clara;
+                    transform: scale(1.05);
+                }
+            }
+        }
 
 
 

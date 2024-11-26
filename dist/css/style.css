@@ -359,6 +359,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  /*Div Proffesores*/
+  /*Div Academia*/
+}
+#sobre #equipe h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8rem;
+  font-weight: none;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 15px;
 }
 #sobre #equipe #container-professores {
   display: flex;
@@ -448,6 +458,65 @@ body {
 }
 #sobre #equipe #container-professores .card .card-img-overlay .info-card .social-links:hover {
   color: #b10808;
+}
+#sobre #equipe .academia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 320px;
+}
+#sobre #equipe .academia h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8rem;
+  font-weight: none;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 15px;
+}
+#sobre #equipe .academia .nossa-academia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+#sobre #equipe .academia .nossa-academia p {
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(to top, #5a0303, rgba(0, 0, 0, 0.5215686275));
+}
+#sobre #equipe .academia .nossa-academia #carouselExampleCaptions {
+  max-width: 500px;
+  max-height: 500px;
+  border-bottom: solid 8px #b10808;
+}
+#sobre #equipe .academia .nossa-academia #carouselExampleCaptions h5 {
+  text-shadow: 1px 1px 1px #000000;
+}
+#sobre #equipe .academia a {
+  width: 320px;
+  background-image: linear-gradient(to top, #5a0303, #b10808);
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  transition: 0.4s;
+  border: none;
+  margin-top: 20px;
+}
+#sobre #equipe .academia a:hover {
+  color: #ffffff;
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=style.css.map */
