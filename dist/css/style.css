@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Variáveis*/
 /*Comuns*/
 * {
   margin: 0;
@@ -6,7 +7,10 @@
   box-sizing: border-box;
 }
 
-/*Variáveis*/
+span {
+  color: #b10808;
+}
+
 /*Mixins*/
 body {
   font-family: "Bebas Neue", sans-serif;
@@ -197,6 +201,7 @@ body {
   /*Div texto sobre*/
   /*Div Visão estratégica*/
   /*Equipe*/
+  /*Div Academia*/
 }
 #sobre h2 {
   font-family: "Bebas Neue", sans-serif;
@@ -205,7 +210,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   text-shadow: #000000 2px 2px 2px;
-  margin: 25px;
+  margin: 25px 0;
 }
 #sobre #div-texto-sobre {
   display: flex;
@@ -243,10 +248,9 @@ body {
 }
 #sobre #visao-estrategica {
   width: 100%;
-  padding: 15px;
+  padding: 15px 15px 0;
   text-align: center;
   background-color: #000000;
-  border-bottom: solid 6px #b10808;
 }
 #sobre #visao-estrategica h2 {
   font-family: "Bebas Neue", sans-serif;
@@ -262,7 +266,7 @@ body {
   justify-content: space-around;
   align-items: center;
   gap: 0;
-  padding: 30px 30px 100px;
+  padding: 30px;
 }
 @media screen and (min-width: 950px) {
   #sobre #visao-estrategica #visao-estrategica-cards {
@@ -354,15 +358,24 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 30px 30px 100px;
-  background-image: url(./assets/background-alteres-gym.jpg);
+  background-image: url(./assets/back-professores.png);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /*Div Proffesores*/
-  /*Div Academia*/
 }
-#sobre #equipe h2 {
+#sobre #equipe #filtro-02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1450980392), #000000);
+  width: 100%;
+  padding: 15px 30px 50px;
+  /*Div Profesores*/
+}
+#sobre #equipe #filtro-02 h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.8rem;
   font-weight: none;
@@ -370,7 +383,7 @@ body {
   color: #ffffff;
   margin: 15px;
 }
-#sobre #equipe #container-professores {
+#sobre #equipe #filtro-02 #container-professores {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -378,7 +391,7 @@ body {
   gap: 20px;
 }
 @media screen and (min-width: 768px) {
-  #sobre #equipe #container-professores {
+  #sobre #equipe #filtro-02 #container-professores {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -387,26 +400,23 @@ body {
     flex-wrap: wrap;
   }
 }
-#sobre #equipe #container-professores .card {
-  border-radius: 0;
+#sobre #equipe #filtro-02 #container-professores .card {
+  border-radius: 5px;
   height: 500px;
   width: 320px;
   overflow: hidden;
   transition: 0.2s;
   border: none;
-  box-shadow: 3px 3px 3px #000000;
+  box-shadow: 5px 5px 5px #000000;
 }
-#sobre #equipe #container-professores .card img {
+#sobre #equipe #filtro-02 #container-professores .card img {
   transition: 0.4s;
   border-radius: 0;
 }
-#sobre #equipe #container-professores .card:hover {
-  box-shadow: 3px 3px 3px #000000;
-}
-#sobre #equipe #container-professores .card:hover img {
+#sobre #equipe #filtro-02 #container-professores .card:hover img {
   transform: scale(1.1);
 }
-#sobre #equipe #container-professores .card .card-img-overlay {
+#sobre #equipe #filtro-02 #container-professores .card .card-img-overlay {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -414,7 +424,7 @@ body {
   gap: 0;
   padding: 0;
 }
-#sobre #equipe #container-professores .card .card-img-overlay .info-card {
+#sobre #equipe #filtro-02 #container-professores .card .card-img-overlay .info-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -426,63 +436,65 @@ body {
   border-bottom: solid 8px #b10808;
   height: 240px;
 }
-#sobre #equipe #container-professores .card .card-img-overlay .info-card h5 {
+#sobre #equipe #filtro-02 #container-professores .card .card-img-overlay .info-card h5 {
   font-size: 1.5rem;
   background-image: linear-gradient(to left, #000000, #b10808);
   padding: 10px 15px;
   border-radius: 0 0 10px 10px;
 }
-#sobre #equipe #container-professores .card .card-img-overlay .info-card h6 {
+#sobre #equipe #filtro-02 #container-professores .card .card-img-overlay .info-card h6 {
   font-size: 1.2rem;
   text-shadow: 2px 2px 2px #000000;
 }
-#sobre #equipe #container-professores .card .card-img-overlay .info-card p {
+#sobre #equipe #filtro-02 #container-professores .card .card-img-overlay .info-card p {
   font-size: 1.1rem;
   text-align: center;
   text-shadow: 2px 2px 2px #000000;
 }
-#sobre #equipe #container-professores .card .card-img-overlay .info-card .social-links {
+#sobre #equipe #filtro-02 #container-professores .card .card-img-overlay .info-card .social-links {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-#sobre #equipe #container-professores .card .card-img-overlay .info-card .social-links a {
+#sobre #equipe #filtro-02 #container-professores .card .card-img-overlay .info-card .social-links a {
   color: #ffffff;
   font-size: 1.6rem;
   transition: 0.4s;
 }
-#sobre #equipe #container-professores .card .card-img-overlay .info-card .social-links a:hover {
+#sobre #equipe #filtro-02 #container-professores .card .card-img-overlay .info-card .social-links a:hover {
   color: #b10808;
 }
-#sobre #equipe #container-professores .card .card-img-overlay .info-card .social-links:hover {
+#sobre #equipe #filtro-02 #container-professores .card .card-img-overlay .info-card .social-links:hover {
   color: #b10808;
 }
-#sobre #equipe .academia {
+#sobre .academia {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  width: 320px;
+  gap: 30px;
+  width: 100%;
+  padding: 40px 0px;
+  background-color: #000000;
 }
-#sobre #equipe .academia h2 {
+#sobre .academia h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.8rem;
   font-weight: none;
   text-decoration: none;
   color: #ffffff;
-  margin: 15px;
+  margin: 0;
 }
-#sobre #equipe .academia .nossa-academia {
+#sobre .academia .nossa-academia {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0;
 }
-#sobre #equipe .academia .nossa-academia p {
+#sobre .academia .nossa-academia p {
   height: auto;
   width: auto;
   margin: 0;
@@ -490,17 +502,16 @@ body {
   border-radius: 10px 10px 0 0;
   text-align: center;
   color: #ffffff;
-  background-image: linear-gradient(to top, #5a0303, rgba(0, 0, 0, 0.5215686275));
 }
-#sobre #equipe .academia .nossa-academia #carouselExampleCaptions {
+#sobre .academia .nossa-academia #carouselExampleCaptions {
   max-width: 500px;
   max-height: 500px;
   border-bottom: solid 8px #b10808;
 }
-#sobre #equipe .academia .nossa-academia #carouselExampleCaptions h5 {
+#sobre .academia .nossa-academia #carouselExampleCaptions h5 {
   text-shadow: 1px 1px 1px #000000;
 }
-#sobre #equipe .academia a {
+#sobre .academia a {
   width: 320px;
   background-image: linear-gradient(to top, #5a0303, #b10808);
   padding: 10px 15px;
@@ -512,9 +523,8 @@ body {
   font-size: 1.2rem;
   transition: 0.4s;
   border: none;
-  margin-top: 20px;
 }
-#sobre #equipe .academia a:hover {
+#sobre .academia a:hover {
   color: #ffffff;
   transform: scale(1.05);
 }

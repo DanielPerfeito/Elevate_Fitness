@@ -1,5 +1,3 @@
-
-
 /*SEÇÃO SOBRE*/
 
 /*Seção Sobre*/
@@ -7,10 +5,10 @@
     @include display-layout(flex, column, center, center, 0);
     @include text-layout($fonte-padrao, $fonte-size-texto, none, none, none);
 
-    h2{
+    h2 {
         @include text-layout($fonte-padrao, $fonte-size-titulo, none, none, $cor-clara);
         text-shadow: $cor-escura 2px 2px 2px;
-        margin: 25px;
+        margin: 25px 0;
     }
 
     /*Div texto sobre*/
@@ -21,64 +19,59 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        #filtro-01{
+
+        #filtro-01 {
             padding: 15px;
             background-image: linear-gradient(to top, #000000, #ffffff25);
-
             width: 100%;
-            #container-texto-sobre{
 
+            #container-texto-sobre {
                 @include display-layout(flex, column, center, center, 15px);
 
                 img {
-                width: 200px;
-                filter: drop-shadow(2px 5px 1px $cor-escura);
+                    width: 200px;
+                    filter: drop-shadow(2px 5px 1px $cor-escura);
                 }
-    
-            p {
-                margin: 0;
-                color: $cor-clara;
-                margin-bottom: 50px;
-                text-shadow: $cor-escura 2px 2px 2px;
+
+                p {
+                    margin: 0;
+                    color: $cor-clara;
+                    margin-bottom: 50px;
+                    text-shadow: $cor-escura 2px 2px 2px;
+                }
             }
         }
-        }
 
-        
-        
     }
+
     /*Div Visão estratégica*/
     #visao-estrategica {
+
         width: 100%;
-        padding: 15px;
+        padding: 15px 15px 0;
         text-align: center;
         background-color: $cor-escura;
-        border-bottom: solid 6px $cor-vermelho-claro;
+       
 
-    
-
-        h2{
+        h2 {
             @include text-layout($fonte-padrao, $fonte-size-subtitulo, none, none, $cor-clara);
             margin: 15px
         }
 
         #visao-estrategica-cards {
             @include display-layout(flex, column, space-around, center, 0);
-            padding: 30px 30px 100px;
+            padding: 30px;
 
-            @media screen and (min-width: 950px){
+            @media screen and (min-width: 950px) {
                 @include display-layout(flex, row, center, center, 0);
             }
-
-          
 
             .card-VE {
                 @include display-layout(flex, column, space-evenly, center, 10px);
                 @include box-layout(420px, 320px, 0, 20px, 0);
                 text-align: center;
                 color: $cor-clara;
-                
-            
+
                 img {
                     height: 20%;
                 }
@@ -94,7 +87,7 @@
                 }
             }
 
-            #card-missao{
+            #card-missao {
                 background-image: linear-gradient(to left, $cor-escura, $cor-vermelho-escuro);
                 border: solid 3px $cor-escura;
                 border-top: solid 3px $cor-vermelho-claro;
@@ -102,9 +95,8 @@
                 border-bottom: none;
                 border-right: none;
 
-                @media screen and (min-width: 950px){
+                @media screen and (min-width: 950px) {
                     background-image: linear-gradient(to bottom, $cor-escura, $cor-vermelho-escuro);
-
                     border-top: none;
                     border-left: solid 3px $cor-vermelho-claro;
                     border-bottom: solid 3px $cor-vermelho-claro;
@@ -112,16 +104,15 @@
                 }
             }
 
-            #card-visao{
+            #card-visao {
                 background-image: linear-gradient(to right, $cor-escura, $cor-vermelho-escuro);
                 border-top: solid 3px $cor-vermelho-claro;
                 border-right: solid 3px $cor-vermelho-claro ;
-                border-bottom: none ;
-                border-left: none ;
+                border-bottom: none;
+                border-left: none;
 
-                @media screen and (min-width: 950px){
+                @media screen and (min-width: 950px) {
                     background-image: linear-gradient(to top, $cor-escura, $cor-vermelho-escuro);
-
                     border-top: solid 3px $cor-vermelho-claro;
                     border-left: solid 3px $cor-vermelho-claro;
                     border-bottom: none;
@@ -129,16 +120,15 @@
                 }
             }
 
-            #card-valores{
+            #card-valores {
                 background-image: linear-gradient(to left, $cor-escura, $cor-vermelho-escuro);
                 border-top: solid 3px $cor-vermelho-claro;
                 border-left: solid 3px $cor-vermelho-claro;
                 border-bottom: solid 3px $cor-vermelho-claro;
                 border-right: none;
 
-                @media screen and (min-width: 950px){
+                @media screen and (min-width: 950px) {
                     background-image: linear-gradient(to bottom, $cor-escura, $cor-vermelho-escuro);
-
                     border-top: none;
                     border-left: solid 3px $cor-vermelho-claro;
                     border-bottom: solid 3px $cor-vermelho-claro;
@@ -149,185 +139,161 @@
     }
 
     /*Equipe*/
-    #equipe{
+    #equipe {
 
         width: 100%;
         @include display-layout(flex, column, center, center, 20px);
-        padding: 30px 30px 100px;
-        background-image: url(./assets/background-alteres-gym.jpg);
+        background-image: url(./assets/back-professores.png);
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
 
-        
-        h2{
-            @include text-layout($fonte-padrao, $fonte-size-subtitulo, none, none, $cor-clara);
-            margin: 15px
-        }
+        #filtro-02 {
+            @include display-layout(flex, column, center, center, 15px);
+            background-image: linear-gradient(to top,  #ffffff25, #000000);
+            width: 100%;
+            padding: 15px 30px 50px;
 
-        
-        /*Div Proffesores*/
-        #container-professores{
-
-            
-            @include display-layout(flex, column, center, center, 20px);
-
-            @media screen and (min-width: 768px){
-                @include display-layout(flex, row, center, center, 10px);
-                flex-wrap: wrap;
-            }
-            .card{
-                border-radius: 0;
-                height: 500px;
-                width: 320px;
-                overflow: hidden;
-                transition: .2s;
-                border: none;
-                box-shadow: 3px 3px 3px $cor-escura;
-
-
-
-                img{
-                    transition:  .4s;
-                    border-radius: 0;
-                }
-
-                &:hover{
-                    box-shadow: 3px 3px 3px $cor-escura;
-                    img{
-                        transform: scale(1.1);
-                    }
-                }
-
-                .card-img-overlay{
-
-                    @include display-layout(flex, column, end, center, 0);
-                    padding: 0;
-
-                    .info-card{
-                        @include display-layout(flex, column, space-between, center, 0);
-                        background-color: #0000008f;
-                        color: $cor-clara;
-                        padding: 0px 10px 10px 10px;
-                        border-bottom: solid 8px $cor-vermelho-claro;
-                       
-                        height: 240px;
-
-                        h5{
-                            font-size: 1.5rem;
-
-                            background-image: linear-gradient( to left, $cor-escura, $cor-vermelho-claro);
-                            padding: 10px 15px;
-                            border-radius: 0 0 10px 10px;
-                        }
-                        h6{
-                            font-size: 1.2rem;
-                            text-shadow: 2px 2px 2px $cor-escura;
-                    
-                        }
-                        p{
-                            font-size: 1.1rem;
-                            text-align: center;
-                            text-shadow: 2px 2px 2px $cor-escura;
-                            
-                        }
-
-                        .social-links{
-                            @include display-layout(flex, row, center, center, 30px);
-
-                            a{color: $cor-clara;
-                                font-size: 1.6rem;
-                                transition: .4s;
-
-                                &:hover{
-                                    
-                                    color: $cor-vermelho-claro;
-                                }
-
-
-                            }
-
-                           
-                            
-
-                            &:hover{
-                                color: $cor-vermelho-claro;
-                            }
-                        }
-                        
-                    }
-
-            
-                    
-                }
-            }
-            
-        }
-          
-        /*Div Academia*/
-        .academia{
-           
-            @include display-layout(flex, column, center, center, 10px);
-            width: 320px;
-
-            h2{
+            h2 {
                 @include text-layout($fonte-padrao, $fonte-size-subtitulo, none, none, $cor-clara);
                 margin: 15px
             }
 
-            .nossa-academia{
-               
-                @include display-layout(flex, column, center, center, 0);
+            /*Div Profesores*/
+            #container-professores {
+                @include display-layout(flex, column, center, center, 20px);
 
-
-                p{
-                    @include box-layout(auto, auto, 0, 20px, 10px 10px 0 0);
-                    text-align: center;
-                    
-                    color: $cor-clara;
-                    background-image: linear-gradient(to top, $cor-vermelho-escuro, #00000085);
-        
-                   
-        
+                @media screen and (min-width: 768px) {
+                    @include display-layout(flex, row, center, center, 10px);
+                    flex-wrap: wrap;
                 }
 
-                #carouselExampleCaptions{
-                    max-width: 500px;
-                    max-height: 500px;
-                    border-bottom: solid 8px $cor-vermelho-claro;
+                .card {
+                    border-radius: 5px;
+                    height: 500px;
+                    width: 320px;
+                    overflow: hidden;
+                    transition: .2s;
+                    border: none;
+                    box-shadow: 5px 5px 5px $cor-escura;
 
-                    
-
-                    h5{
-                        text-shadow: 1px 1px 1px $cor-escura;
+                    img {
+                        transition: .4s;
+                        border-radius: 0;
                     }
 
+                    &:hover {                       
+
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    .card-img-overlay {
+                        @include display-layout(flex, column, end, center, 0);
+                        padding: 0;
+
+                        .info-card {
+                            @include display-layout(flex, column, space-between, center, 0);
+                            background-color: #0000008f;
+                            color: $cor-clara;
+                            padding: 0px 10px 10px 10px;
+                            border-bottom: solid 8px $cor-vermelho-claro;
+                            height: 240px;
+
+                            h5 {
+                                font-size: 1.5rem;
+                                background-image: linear-gradient(to left, $cor-escura, $cor-vermelho-claro);
+                                padding: 10px 15px;
+                                border-radius: 0 0 10px 10px;
+                            }
+
+                            h6 {
+                                font-size: 1.2rem;
+                                text-shadow: 2px 2px 2px $cor-escura;
+                            }
+
+                            p {
+                                font-size: 1.1rem;
+                                text-align: center;
+                                text-shadow: 2px 2px 2px $cor-escura;
+                            }
+
+                            .social-links {
+                                @include display-layout(flex, row, center, center, 30px);
+
+                                a {
+                                    color: $cor-clara;
+                                    font-size: 1.6rem;
+                                    transition: .4s;
+
+                                    &:hover {
+                                        color: $cor-vermelho-claro;
+                                    }
+                                }
+
+                                &:hover {
+                                    color: $cor-vermelho-claro;
+                                }
+                            }
+                        }
+                    }
                 }
             }
+        }
+    }
 
-            a{
-                width: 320px;
-                background-image: linear-gradient(to top, $cor-vermelho-escuro, $cor-vermelho-claro );
-                padding: 10px 15px;
-                border-radius: 5px;
-                text-decoration: none;
+    /*Div Academia*/
+    .academia {
+        @include display-layout(flex, column, center, center, 30px);
+        width: 100%;
+        padding: 40px 0px;
+
+        background-color: $cor-escura;
+
+        h2 {
+            @include text-layout($fonte-padrao, $fonte-size-subtitulo, none, none, $cor-clara);
+            margin: 0
+        }
+
+        .nossa-academia {
+            @include display-layout(flex, column, center, center, 0);
+           
+            p {
+                @include box-layout(auto, auto, 0, 20px, 10px 10px 0 0);
+                text-align: center;
                 color: $cor-clara;
-                font-family: $fonte-padrao;
-                letter-spacing: 2px;
-                font-size: 1.2rem;
-                transition: .4s;
-                border: none;
-                margin-top: 20px;
-    
-                &:hover {
-                    color: $cor-clara;
-                    transform: scale(1.05);
+            }
+
+            #carouselExampleCaptions {
+                max-width: 500px;
+                max-height: 500px;
+                border-bottom: solid 8px $cor-vermelho-claro;
+
+                h5 {
+                    text-shadow: 1px 1px 1px $cor-escura;
                 }
             }
         }
 
+        a {
+            width: 320px;
+            background-image: linear-gradient(to top, $cor-vermelho-escuro, $cor-vermelho-claro );
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: $cor-clara;
+            font-family: $fonte-padrao;
+            letter-spacing: 2px;
+            font-size: 1.2rem;
+            transition: .4s;
+            border: none;
 
-
+            &:hover {
+                color: $cor-clara;
+                transform: scale(1.05);
+            }
+        }
     }
 }
-

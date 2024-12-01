@@ -1,11 +1,4 @@
 
-/*Comuns*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /*Variáveis*/
 $cor-escura: #000000;
 $cor-clara: #ffffff;
@@ -15,6 +8,20 @@ $fonte-padrao: "Bebas Neue", sans-serif;
 $fonte-size-titulo: 2.8rem;
 $fonte-size-subtitulo: 1.8rem;
 $fonte-size-texto: 1.2rem;
+
+
+/*Comuns*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span{
+    color: $cor-vermelho-claro;
+}
+
+
 
 /*Mixins*/
 
@@ -46,7 +53,6 @@ body{
     font-family: $fonte-padrao;
     font-weight: bold;
 }
-
 
 /*Imports*/
 @import 'home.scss';
