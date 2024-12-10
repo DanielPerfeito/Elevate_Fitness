@@ -1,47 +1,69 @@
-#treinos{
+/*SEÇÃO TREINOS*/
+#treinos {
+    @include display-layout(flex, column, center, center, 40px);
+    padding: 40px 10px;
+    background-image: url(./assets/background-alteres-gym.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 
-
-    h2{
-        @include text-layout($fonte-padrao, $fonte-size-titulo, none, none, $cor-clara)
+    h2 {
+        @include text-layout($fonte-padrao, $fonte-size-titulo, none, none, $cor-clara);
+        text-shadow: 2px 2px 2px $cor-escura;
     }
 
-    #div-treinos{
+    h3 {
+        font-family: $fonte-padrao;
+        text-align: center;
+        color: $cor-clara;
+        text-shadow: 2px 2px 2px $cor-escura;
+    }
 
-        .card-treino{
+    /*Div Treinos*/
+    #div-treinos {
+
+        @include display-layout(flex, column, center, center, 10px);
+
+        /*Cards de Treino*/
+        .card-treino {
             @include display-layout(flex, column, center, center, 10px);
-
             font-family: $fonte-padrao;
             text-align: center;
-
-            background-color: azure;
             width: 300px;
             height: 300px;
-            padding: 10px;
-
-            border-left: solid 3px $cor-vermelho-claro;
+            padding: 10px 25px;
+            border-left: solid 5px $cor-vermelho-claro;
+            border-radius: 0 10px 10px 0;
             background-color: #00000085;
+            transition: .4s;
 
-            img{
+            &:hover {
+                background-color: $cor-escura;
+            }
+
+            img {
                 height: 25%;
             }
 
-            h3{
-                
+            h3 {
+                color: $cor-vermelho-claro
             }
 
-            p{
-
+            p {
+                color: $cor-clara;
+                text-shadow: 2px 2px 2px $cor-escura;
             }
 
-            a{
+            a {
+                color: $cor-vermelho-claro;
                 text-decoration: none;
-            }
+                border: solid 2.5px $cor-vermelho-claro;
 
+                &:hover {
+                    color: $cor-clara;
+                    background-color: $cor-vermelho-claro;
+                }
+            }
         }
     }
-
-
-
-
-
 }

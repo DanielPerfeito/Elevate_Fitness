@@ -1,6 +1,4 @@
 /*SEÇÃO SOBRE*/
-
-/*Seção Sobre*/
 #sobre {
     @include display-layout(flex, column, center, center, 0);
     @include text-layout($fonte-padrao, $fonte-size-texto, none, none, none);
@@ -41,17 +39,14 @@
                 }
             }
         }
-
     }
 
     /*Div Visão estratégica*/
     #visao-estrategica {
-
         width: 100%;
         padding: 15px 15px 0;
         text-align: center;
         background-color: $cor-escura;
-       
 
         h2 {
             @include text-layout($fonte-padrao, $fonte-size-subtitulo, none, none, $cor-clara);

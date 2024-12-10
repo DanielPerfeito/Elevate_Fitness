@@ -18,7 +18,7 @@ body {
 }
 
 /*Imports*/
-/*Section home*/
+/*SEÇÃO HOME*/
 #home {
   height: 100vh;
   width: 100%;
@@ -186,7 +186,6 @@ body {
 }
 
 /*SEÇÃO SOBRE*/
-/*Seção Sobre*/
 #sobre {
   display: flex;
   flex-direction: column;
@@ -529,12 +528,41 @@ body {
   transform: scale(1.05);
 }
 
+/*SEÇÃO TREINOS*/
+#treinos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 10px;
+  background-image: url(./assets/background-alteres-gym.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /*Div Treinos*/
+}
 #treinos h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 2.8rem;
   font-weight: none;
   text-decoration: none;
   color: #ffffff;
+  text-shadow: 2px 2px 2px #000000;
+}
+#treinos h3 {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #000000;
+}
+#treinos #div-treinos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /*Cards de Treino*/
 }
 #treinos #div-treinos .card-treino {
   display: flex;
@@ -544,18 +572,35 @@ body {
   gap: 10px;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
-  background-color: azure;
   width: 300px;
   height: 300px;
-  padding: 10px;
-  border-left: solid 3px #b10808;
+  padding: 10px 25px;
+  border-left: solid 5px #b10808;
+  border-radius: 0 10px 10px 0;
   background-color: rgba(0, 0, 0, 0.5215686275);
+  transition: 0.4s;
+}
+#treinos #div-treinos .card-treino:hover {
+  background-color: #000000;
 }
 #treinos #div-treinos .card-treino img {
   height: 25%;
 }
+#treinos #div-treinos .card-treino h3 {
+  color: #b10808;
+}
+#treinos #div-treinos .card-treino p {
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #000000;
+}
 #treinos #div-treinos .card-treino a {
+  color: #b10808;
   text-decoration: none;
+  border: solid 2.5px #b10808;
+}
+#treinos #div-treinos .card-treino a:hover {
+  color: #ffffff;
+  background-color: #b10808;
 }
 
 /*# sourceMappingURL=style.css.map */
