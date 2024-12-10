@@ -1,0 +1,47 @@
+#treinos{
+
+
+    h2{
+        @include text-layout($fonte-padrao, $fonte-size-titulo, none, none, $cor-clara)
+    }
+
+    #div-treinos{
+
+        .card-treino{
+            @include display-layout(flex, column, center, center, 10px);
+
+            font-family: $fonte-padrao;
+            text-align: center;
+
+            background-color: azure;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+
+            border-left: solid 3px $cor-vermelho-claro;
+            background-color: #00000085;
+
+            img{
+                height: 25%;
+            }
+
+            h3{
+                
+            }
+
+            p{
+
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+        }
+    }
+
+
+
+
+
+}
