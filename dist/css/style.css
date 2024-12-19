@@ -535,7 +535,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding: 40px 10px;
+  padding: 40px 0px;
   background-image: url(./assets/background-alteres-gym.jpg);
   background-size: cover;
   background-position: center;
@@ -555,6 +555,7 @@ body {
   text-align: center;
   color: #ffffff;
   text-shadow: 2px 2px 2px #000000;
+  padding: 0 10px;
 }
 #treinos #div-treinos {
   display: flex;
@@ -599,6 +600,52 @@ body {
   border: solid 2.5px #b10808;
 }
 #treinos #div-treinos .card-treino a:hover {
+  color: #ffffff;
+  background-color: #b10808;
+}
+#treinos #div-calc-IMC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #000000;
+  padding: 25px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Bebas Neue", sans-serif;
+}
+#treinos #div-calc-IMC h2 {
+  font-size: 1.8rem;
+}
+#treinos #div-calc-IMC #calc-IMC {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+#treinos #div-calc-IMC #calc-IMC form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+#treinos #div-calc-IMC #calc-IMC form input, #treinos #div-calc-IMC #calc-IMC form button {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+#treinos #div-calc-IMC #calc-IMC form button {
+  margin-top: 10px;
+  color: #b10808;
+  text-decoration: none;
+  border: solid 2.5px #b10808;
+}
+#treinos #div-calc-IMC #calc-IMC form button:hover {
   color: #ffffff;
   background-color: #b10808;
 }

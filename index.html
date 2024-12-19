@@ -385,6 +385,37 @@
       </div>
       <!--Observação de horários-->
       <h3><i class="bi bi-alarm"></i> Escolha seu horário e venha elevar os seu limites com a gente!</h3>
+
+      <div id="div-calc-IMC">
+        <h2>Calcule seu <span>IMC</span></h2>
+        <p><i class="bi bi-info-circle"></i> <span>IMC (Índice de Massa Corporal)</span> é uma forma simples de descobrir se você está no peso ideal para sua altura. É uma ferramenta fácil para cuidar da saúde, mas não substitui uma avaliação médica</p>
+
+        <div id="calc-IMC">
+          <form id="imc-form">
+              <label for="peso">Peso (kg):</label>
+              <input type="number" id="peso" name="peso" placeholder="Ex.. 89" required>
+  
+              <label for="altura">Altura (m):</label>
+              <input type="number" id="altura" name="altura" step="0.01" placeholder="Ex.. 1.83" required>
+  
+              <button type="submit" class="btn"> <i class="bi bi-calculator"></i> Calcular IMC</button>
+          </form>
+  
+          <div id="resultado" class="">
+              <h2>Resultado:</h2>
+              <p id="imc-value"></p>
+              <p id="imc-category"></p>
+          </div>
+          
+        </div>
+      </div>
+
+      
+
+
+
+
+
     </section>
 
     <!--Seção Contato-->
