@@ -1,0 +1,69 @@
+// Footer
+
+footer{
+    @include display-layout(flex, column, center, center, 15px);
+    background-color: $cor-vermelho-claro;
+    font-family: $fonte-padrao;
+    padding: 40px 25px;
+    
+
+    a{
+        text-decoration: none;
+        color: $cor-clara;
+        text-shadow: 2px 2px 2px $cor-escura;
+        transition: .4s;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    
+
+    #div-links-footer{
+        @include display-layout(flex, column, center, center, 20px);
+        color: $cor-clara;
+
+        #logo-footer{
+            
+            img{
+                height: 100px;
+                filter: drop-shadow(2px 5px 1px $cor-escura);
+            }
+        }
+
+        .divs-footer{
+            @include display-layout(flex, column, center, center, 0);
+
+           .Subtitulo-links{
+            font-size: $fonte-size-subtitulo;
+           }
+
+           a{
+            font-size: $fonte-size-texto
+           }
+        }
+
+        .social{
+            @include display-layout(flex, row, center, center, 25px);
+            width: 100%;
+
+            a{
+                font-size: 2rem;
+
+                &:hover {
+                    color: $cor-clara;
+                    transform: scale(1.4);
+                }
+            };
+        }
+
+        
+
+    }
+
+    #div-copyright{
+        @include display-layout(flex, column, center, center, 0);
+
+        color: $cor-vermelho-escuro;
+    }
+}
