@@ -1,0 +1,61 @@
+// Section contato
+
+#contato{
+    background-color: $cor-escura;
+
+    @include display-layout(flex, column, center, center, 15px);
+    font-family: $fonte-padrao;
+    padding: 40px 0;
+    color: $cor-clara;
+
+    h2{
+        font-size: $fonte-size-titulo;
+    }
+
+    #endereco{
+        @include display-layout(flex, column, center, center, 5px);
+
+        p{
+            width: 90%;
+            text-align: center;
+        }
+    }
+
+    #mapa{
+        width: 100%;
+        height: 300px;
+        border-bottom: solid 8px $cor-vermelho-claro;
+    }
+
+    #form-contato{
+        @include display-layout(flex, column, center, center, 5px);
+        width: 100%;
+        padding: 0 25px;
+
+        input{
+            width: 100%;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+
+        textarea{
+            width: 100%;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+
+        button{
+            margin-top: 25px;
+                color: $cor-vermelho-claro;
+                text-decoration: none;
+                border: solid 2.5px $cor-vermelho-claro;
+                width: 100%;
+
+                &:hover {
+                    color: $cor-clara;
+                    background-color: $cor-vermelho-claro;
+                }
+        }
+    }
+
+}

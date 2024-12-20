@@ -166,7 +166,8 @@
                 <div class="info-card">
                   <h5 class="card-title">Personal Leandro Guerra</h5>
                   <h6><i class="bi bi-bullseye"></i> HIIT e Cardiorrespiratório</h6>
-                  <p class="card-text">Leandro trabalha com treinos intensivos para emagrecimento e aumento da resistência
+                  <p class="card-text">Leandro trabalha com treinos intensivos para emagrecimento e aumento da
+                    resistência
                     física.</p>
                   <div class="social-links">
                     <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
@@ -183,7 +184,8 @@
                 <div class="info-card">
                   <h5 class="card-title">Personal Cassandra Gomes</h5>
                   <h6><i class="bi bi-bullseye"></i> Yoga e Pilates</h6>
-                  <p class="card-text">Cassandra promove equilíbrio entre corpo e mente por meio de práticas que melhoram
+                  <p class="card-text">Cassandra promove equilíbrio entre corpo e mente por meio de práticas que
+                    melhoram
                     flexibilidade, concentração e bem-estar.</p>
                   <div class="social-links">
                     <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
@@ -232,8 +234,8 @@
         </div>
       </div>
 
-       <!--Academia-->
-       <div class="academia">
+      <!--Academia-->
+      <div class="academia">
         <h2>Nossa <span>Academia</span></h2>
 
         <div class="nossa-academia">
@@ -336,9 +338,9 @@
 
     <!--Seção Treinos-->
     <section id="treinos">
-    
+
       <h2>Nossos <span>Treinos</span></h2>
-        <!--Div Cards de treino-->
+      <!--Div Cards de treino-->
       <div id="div-treinos">
         <!--Musculação-->
         <div class="card-treino">
@@ -388,38 +390,57 @@
 
       <div id="div-calc-IMC">
         <h2>Calcule seu <span>IMC</span></h2>
-        <p><i class="bi bi-info-circle"></i> <span>IMC (Índice de Massa Corporal)</span> é uma forma simples de descobrir se você está no peso ideal para sua altura. É uma ferramenta fácil para cuidar da saúde, mas não substitui uma avaliação médica</p>
+        <p><i class="bi bi-info-circle"></i> <span>IMC (Índice de Massa Corporal)</span> é uma forma simples de
+          descobrir se você está no peso ideal para sua altura. É uma ferramenta fácil para cuidar da saúde, mas não
+          substitui uma avaliação médica</p>
 
         <div id="calc-IMC">
           <form id="imc-form">
-              <label for="peso">Peso (kg):</label>
-              <input type="number" id="peso" name="peso" placeholder="Ex.. 89" required>
-  
-              <label for="altura">Altura (m):</label>
-              <input type="number" id="altura" name="altura" step="0.01" placeholder="Ex.. 1.83" required>
-  
-              <button type="submit" class="btn"> <i class="bi bi-calculator"></i> Calcular IMC</button>
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" name="peso" placeholder="Ex.. 89" required>
+
+            <label for="altura">Altura (m):</label>
+            <input type="number" id="altura" name="altura" step="0.01" placeholder="Ex.. 1.83" required>
+
+            <button type="submit" class="btn"> <i class="bi bi-calculator"></i> Calcular IMC</button>
           </form>
-  
+
           <div id="resultado" class="">
-              <h2>Resultado:</h2>
-              <p id="imc-value"></p>
-              <p id="imc-category"></p>
+            <h2>Resultado:</h2>
+            <p id="imc-value"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maiores ullam molestias veritatis, dolorum tenetur? Similique fugit aspernatur saepe, doloremque sed, nobis eum tempore laborum ab officiis, eos aliquam accusamus.
+            </p>
+            <p id="imc-category">  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem mollitia architecto reprehenderit qui consequuntur vitae aut sapiente voluptate eveniet totam soluta blanditiis id et non, voluptatibus adipisci cumque impedit voluptatum.</p>
+            <button type="button" class="btn"><i class="bi bi-arrow-repeat"></i> Calcular novamente</button>
           </div>
-          
+
         </div>
       </div>
-
-      
-
-
-
-
-
     </section>
 
     <!--Seção Contato-->
     <section id="contato">
+      <h2>NOSSO <span>CONTATO</span></h2>
+      <div id="div-contato">
+        <div id="endereco">
+          <p><span><i class="bi bi-geo-alt-fill"></i> Localização:</span> <br> Av. Embaixador Abelardo Bueno, 1300 - Barra Olímpica, Rio
+            de Janeiro - RJ, 22775-040.</p>
+          <p><span><i class="bi bi-calendar-week"></i> Horário de funcionamento:</span> <br> Segunda a sábado, das 06h às 22h.</p>
+        </div>
+        <iframe id="mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6177.912598537907!2d-43.3780496395529!3d-22.971989899908685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd903fbb3965d%3A0xc8d4464179cc366e!2sShopping%20Metropolitano%20Barra!5e0!3m2!1spt-BR!2sbr!4v1734724938250!5m2!1spt-BR!2sbr"
+            allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <form action="" id="form-contato">
+        <h3>Envie-nos<span> Uma mensagem</span></h3>
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" placeholder="Informe seu nome aqui" required>
+        <label for="email">E-mail:</label>
+        <input id="email" type="email" placeholder="Informe um email para resposta" required>
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" maxlength="500" placeholder="Digite sua mensagem aqui.." required></textarea>
+        <button type="submit" class="btn"><i class="bi bi-envelope-fill"></i> Enviar</button>
+      </form>
     </section>
     <!--Footer-->
     <footer>
