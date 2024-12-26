@@ -9,6 +9,11 @@
         position: relative;
         overflow: hidden;
 
+        @media screen and (min-width: 768px) {
+            @include box-layout(70%, 100%, 0, 0, none);
+
+        }
+
         /*Video do background*/
         .background-video {
             position: absolute;
@@ -19,15 +24,56 @@
             width: auto;
             transform: translate(-50%, -50%);
             z-index: -1;
+            border-bottom: solid $cor-escura 5px;
         }
 
         /*Barra de navegação superior (Inativa em mobile)*/
         #menu {
-            @include display-layout(flex, row, start, center, 15px);
-            @include box-layout(auto, 100%, 0 15px 0 10px, 10px, none);
+            @include display-layout(flex, row, center, center, 15px);
+            @include box-layout(auto, 100%, 0 15px 0 10px, 25px, none);
 
             #nav-bar-menu {
                 display: none;
+
+
+
+                @media screen and (min-width: 768px) {
+                    @include display-layout(flex, row, center, center, 50px);
+                   
+                    
+                    font-family: $fonte-padrao;
+                    text-decoration: none;
+
+                    a {
+                        text-decoration: none;
+                        color: $cor-escura;
+                        font-size: 1.5rem;
+                        transition: .4s;
+
+                        &:hover {
+                            color: $cor-vermelho-claro
+                        }
+                    }
+
+                    #chamada-action-head {
+                        background-image: linear-gradient(to top, $cor-vermelho-escuro, $cor-vermelho-claro );
+                        padding: 10px 20px;
+
+                        border-radius: 25px;
+                        text-decoration: none;
+                        color: $cor-clara;
+                        font-family: $fonte-padrao;
+                        letter-spacing: 2px;
+                        font-size: .8rem;
+                        transition: .4s;
+
+                        &:hover {
+                            color: $cor-clara;
+                            transform: scale(1.05);
+                        }
+
+                    }
+                }
             }
 
             /*Botão do menu retrátil (ativo somente em mobile)*/
@@ -44,12 +90,23 @@
                 height: 50px;
                 width: 50px;
                 transition: .4s;
+
+                @media screen and (min-width: 768px) {
+                    display: none;
+
+                }
             }
         }
 
         #logo {
             height: 80%;
+
+            @media screen and (min-width: 768px) {
+                height: 70%;
+            }
         }
+        
+
     }
 
     /*Slogan*/
@@ -57,14 +114,44 @@
         @include display-layout(flex, column, start, center, 40px);
         @include box-layout(50%, 100%, 0, 0, none);
         background-color: $cor-escura;
+        
 
-        h1 {
+        @media screen and (min-width: 768px) {
+            @include display-layout(flex, column, center, center, 40px);
+            @include box-layout(30%, 100%, 0, 0, none);
+
+        }
+
+        #h1-1 {
             background-color: $cor-escura;
             color: $cor-clara;
             padding: 15px 30px;
             text-align: center;
             font-family: $fonte-padrao;
             font-size: 2.5rem;
+
+            @media screen and (min-width: 768px) {
+                display: none;
+
+            }
+        }
+
+        #h1-2 {
+            display: none;
+            background-color: $cor-escura;
+            color: $cor-vermelho-claro;
+            padding: 15px 30px;
+            text-align: center;
+            font-family: $fonte-padrao;
+            font-size: 3.3rem;
+
+            @media screen and (min-width: 768px) {
+                display: flex;
+                
+
+            }
+
+            
         }
 
         #chamada-action-02 {
@@ -77,6 +164,10 @@
             letter-spacing: 2px;
             font-size: 1.2rem;
             transition: .4s;
+
+            @media screen and (min-width: 768px){
+                display: none;
+            }
 
             &:hover {
                 color: $cor-clara;

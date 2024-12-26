@@ -2,6 +2,7 @@
 #sobre {
     @include display-layout(flex, column, center, center, 0);
     @include text-layout($fonte-padrao, $fonte-size-texto, none, none, none);
+    border-top: solid 6px $cor-vermelho-claro;
 
     h2 {
         @include text-layout($fonte-padrao, $fonte-size-titulo, none, none, $cor-clara);
@@ -17,18 +18,43 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+        
 
         #filtro-01 {
             padding: 15px;
             background-image: linear-gradient(to top, #000000, #ffffff25);
             width: 100%;
 
+            @media screen and (min-width: 1150px){
+
+                padding: 80px 50px;
+            }
+
             #container-texto-sobre {
                 @include display-layout(flex, column, center, center, 15px);
+                width: 100%;
+                padding: 30px;
+
+                @media screen and (min-width: 1150px){
+
+                    @include display-layout(flex, row, center, center, 15px);
+                    padding: 0 0 100px;
+                }
 
                 img {
                     width: 200px;
                     filter: drop-shadow(2px 5px 1px $cor-escura);
+
+
+
+                    @media screen and (min-width: 1150px){
+                        width: 300px;
+    
+                        padding: 0 30px 70px 0;
+
+                        border-right: solid 8px $cor-vermelho-claro;
+                
+                    }
                 }
 
                 p {
@@ -36,6 +62,16 @@
                     color: $cor-clara;
                     margin-bottom: 50px;
                     text-shadow: $cor-escura 2px 2px 2px;
+
+                    
+
+                    @media screen and (min-width: 1150px){
+                        margin: 0;
+                        padding-left: 30px;
+                        text-align: left;
+                        width: 50%;
+                
+                    }
                 }
             }
         }
@@ -48,6 +84,11 @@
         text-align: center;
         background-color: $cor-escura;
 
+        @media screen and (min-width: 950px) {
+           padding: 80px 50px;
+            
+        }
+
         h2 {
             @include text-layout($fonte-padrao, $fonte-size-subtitulo, none, none, $cor-clara);
             margin: 15px
@@ -55,10 +96,10 @@
 
         #visao-estrategica-cards {
             @include display-layout(flex, column, space-around, center, 0);
-            padding: 30px;
 
             @media screen and (min-width: 950px) {
                 @include display-layout(flex, row, center, center, 0);
+                
             }
 
             .card-VE {
@@ -66,6 +107,14 @@
                 @include box-layout(420px, 320px, 0, 20px, 0);
                 text-align: center;
                 color: $cor-clara;
+
+
+                @media screen and (min-width: 950px) {
+                    @include box-layout(420px, 400px, 0, 20px, 0);
+
+                }
+
+
 
                 img {
                     height: 20%;
@@ -144,11 +193,18 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
 
+        
+
         #filtro-02 {
             @include display-layout(flex, column, center, center, 15px);
             background-image: linear-gradient(to top,  #ffffff25, #000000);
             width: 100%;
             padding: 15px 30px 50px;
+
+            @media screen and (min-width: 1150px){
+
+                padding: 80px 50px;
+            }
 
             h2 {
                 @include text-layout($fonte-padrao, $fonte-size-subtitulo, none, none, $cor-clara);

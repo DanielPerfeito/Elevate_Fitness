@@ -44,6 +44,15 @@ body {
   /*Video do background*/
   /*Barra de navegação superior (Inativa em mobile)*/
 }
+@media screen and (min-width: 768px) {
+  #home header {
+    height: 70%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: none;
+  }
+}
 #home header .background-video {
   position: absolute;
   top: 50%;
@@ -53,22 +62,58 @@ body {
   width: auto;
   transform: translate(-50%, -50%);
   z-index: -1;
+  border-bottom: solid #000000 5px;
 }
 #home header #menu {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   gap: 15px;
   height: auto;
   width: 100%;
   margin: 0 15px 0 10px;
-  padding: 10px;
+  padding: 25px;
   border-radius: none;
   /*Botão do menu retrátil (ativo somente em mobile)*/
 }
 #home header #menu #nav-bar-menu {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  #home header #menu #nav-bar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+  }
+  #home header #menu #nav-bar-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+    transition: 0.4s;
+  }
+  #home header #menu #nav-bar-menu a:hover {
+    color: #b10808;
+  }
+  #home header #menu #nav-bar-menu #chamada-action-head {
+    background-image: linear-gradient(to top, #5a0303, #b10808);
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    transition: 0.4s;
+  }
+  #home header #menu #nav-bar-menu #chamada-action-head:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+  }
 }
 #home header #menu #btn-menu-retratil-abrir {
   display: flex;
@@ -88,8 +133,18 @@ body {
   width: 50px;
   transition: 0.4s;
 }
+@media screen and (min-width: 768px) {
+  #home header #menu #btn-menu-retratil-abrir {
+    display: none;
+  }
+}
 #home header #logo {
   height: 80%;
+}
+@media screen and (min-width: 768px) {
+  #home header #logo {
+    height: 70%;
+  }
 }
 #home #slogan {
   display: flex;
@@ -104,13 +159,46 @@ body {
   border-radius: none;
   background-color: #000000;
 }
-#home #slogan h1 {
+@media screen and (min-width: 768px) {
+  #home #slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 30%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: none;
+  }
+}
+#home #slogan #h1-1 {
   background-color: #000000;
   color: #ffffff;
   padding: 15px 30px;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
   font-size: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  #home #slogan #h1-1 {
+    display: none;
+  }
+}
+#home #slogan #h1-2 {
+  display: none;
+  background-color: #000000;
+  color: #b10808;
+  padding: 15px 30px;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.3rem;
+}
+@media screen and (min-width: 768px) {
+  #home #slogan #h1-2 {
+    display: flex;
+  }
 }
 #home #slogan #chamada-action-02 {
   background-image: linear-gradient(to top, #5a0303, #b10808);
@@ -122,6 +210,11 @@ body {
   letter-spacing: 2px;
   font-size: 1.2rem;
   transition: 0.4s;
+}
+@media screen and (min-width: 768px) {
+  #home #slogan #chamada-action-02 {
+    display: none;
+  }
 }
 #home #slogan #chamada-action-02:hover {
   color: #ffffff;
@@ -197,6 +290,7 @@ body {
   font-weight: none;
   text-decoration: none;
   color: none;
+  border-top: solid 6px #b10808;
   /*Div texto sobre*/
   /*Div Visão estratégica*/
   /*Equipe*/
@@ -228,16 +322,40 @@ body {
   background-image: linear-gradient(to top, #000000, rgba(255, 255, 255, 0.1450980392));
   width: 100%;
 }
+@media screen and (min-width: 1150px) {
+  #sobre #div-texto-sobre #filtro-01 {
+    padding: 80px 50px;
+  }
+}
 #sobre #div-texto-sobre #filtro-01 #container-texto-sobre {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
+  width: 100%;
+  padding: 30px;
+}
+@media screen and (min-width: 1150px) {
+  #sobre #div-texto-sobre #filtro-01 #container-texto-sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0 0 100px;
+  }
 }
 #sobre #div-texto-sobre #filtro-01 #container-texto-sobre img {
   width: 200px;
   filter: drop-shadow(2px 5px 1px #000000);
+}
+@media screen and (min-width: 1150px) {
+  #sobre #div-texto-sobre #filtro-01 #container-texto-sobre img {
+    width: 300px;
+    padding: 0 30px 70px 0;
+    border-right: solid 8px #b10808;
+  }
 }
 #sobre #div-texto-sobre #filtro-01 #container-texto-sobre p {
   margin: 0;
@@ -245,11 +363,24 @@ body {
   margin-bottom: 50px;
   text-shadow: #000000 2px 2px 2px;
 }
+@media screen and (min-width: 1150px) {
+  #sobre #div-texto-sobre #filtro-01 #container-texto-sobre p {
+    margin: 0;
+    padding-left: 30px;
+    text-align: left;
+    width: 50%;
+  }
+}
 #sobre #visao-estrategica {
   width: 100%;
   padding: 15px 15px 0;
   text-align: center;
   background-color: #000000;
+}
+@media screen and (min-width: 950px) {
+  #sobre #visao-estrategica {
+    padding: 80px 50px;
+  }
 }
 #sobre #visao-estrategica h2 {
   font-family: "Bebas Neue", sans-serif;
@@ -265,7 +396,6 @@ body {
   justify-content: space-around;
   align-items: center;
   gap: 0;
-  padding: 30px;
 }
 @media screen and (min-width: 950px) {
   #sobre #visao-estrategica #visao-estrategica-cards {
@@ -289,6 +419,15 @@ body {
   border-radius: 0;
   text-align: center;
   color: #ffffff;
+}
+@media screen and (min-width: 950px) {
+  #sobre #visao-estrategica #visao-estrategica-cards .card-VE {
+    height: 420px;
+    width: 400px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 0;
+  }
 }
 #sobre #visao-estrategica #visao-estrategica-cards .card-VE img {
   height: 20%;
@@ -373,6 +512,11 @@ body {
   width: 100%;
   padding: 15px 30px 50px;
   /*Div Profesores*/
+}
+@media screen and (min-width: 1150px) {
+  #sobre #equipe #filtro-02 {
+    padding: 80px 50px;
+  }
 }
 #sobre #equipe #filtro-02 h2 {
   font-family: "Bebas Neue", sans-serif;
