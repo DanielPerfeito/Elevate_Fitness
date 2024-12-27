@@ -27,7 +27,6 @@
 
 <body>
   <main>
-
     <!--Section Home-->
     <section id="home">
       <!--Header-->
@@ -244,7 +243,7 @@
         <h2>Nossa <span>Academia</span></h2>
 
         <div class="nossa-academia">
-          <p>Oferecemos espaços modernos e bem equipados, planejados para garantir conforto, segurança e uma
+          <p>Oferecemos espaços modernos e bem equipados, planejados para garantir conforto, <br>segurança e uma
             experiência única. Venha treinar com a gente e eleve seus limites!</p>
 
           <!--Carrossel Academia-->
@@ -393,23 +392,23 @@
       <!--Observação de horários-->
       <h3><i class="bi bi-alarm"></i> Escolha seu horário e venha elevar os seu limites com a gente!</h3>
 
+      <!--Calculadora IMC-->
       <div id="div-calc-IMC">
         <h2>Calcule seu <span>IMC</span></h2>
+        <!--Info IMC-->
         <p><i class="bi bi-info-circle"></i> <span>IMC (Índice de Massa Corporal)</span> é uma forma simples de
           descobrir se você está no peso ideal para sua altura. É uma ferramenta fácil para cuidar da saúde, mas não
           substitui uma avaliação médica</p>
-
+          <!--Formulário de captura para a calculadora-->
         <div id="calc-IMC">
           <form id="imc-form">
             <label for="peso">Peso (kg):</label>
             <input type="number" id="peso" name="peso" placeholder="Ex.. 89" required>
-
             <label for="altura">Altura (m):</label>
             <input type="number" id="altura" name="altura" step="0.01" placeholder="Ex.. 1.83" required>
-
             <button type="submit" class="btn"> <i class="bi bi-calculator"></i> Calcular IMC</button>
           </form>
-
+          <!--Area de exibição do resultado-->
           <div id="resultado" class="">
             <h2>Resultado:</h2>
             <p id="imc-value"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maiores ullam molestias
@@ -421,7 +420,6 @@
               voluptatibus adipisci cumque impedit voluptatum.</p>
             <button type="button" class="btn"><i class="bi bi-arrow-repeat"></i> Calcular novamente</button>
           </div>
-
         </div>
       </div>
     </section>
@@ -430,41 +428,47 @@
     <section id="contato">
       <h2>NOSSO <span>CONTATO</span></h2>
       <div id="div-contato">
-        <div id="endereco">
-          <p><span><i class="bi bi-geo-alt-fill"></i> Localização:</span> <br> Av. Embaixador Abelardo Bueno, 1300 -
-            Barra Olímpica, Rio
-            de Janeiro - RJ, 22775-040.</p>
-          <p><span><i class="bi bi-calendar-week"></i> Horário de funcionamento:</span> <br> Segunda a sábado, das 06h
-            às 22h.</p>
+        <!--Bloco do endereço e mapa-->
+        <div id="div-endereco">
+          <!--endereço-->
+          <div id="endereco">
+            <p><span><i class="bi bi-geo-alt-fill"></i> Localização:</span><br> Av. Abelardo Bueno, 1300 -
+              Barra Olímpica, Rio de Janeiro - RJ, 22775-040.</p>
+            <p><span><i class="bi bi-calendar-week"></i> Horário de funcionamento:</span><br> Segunda a sábado, das 06h
+              às 22h.</p>
+          </div>
+          <!--Mapa-->
+          <iframe id="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6177.912598537907!2d-43.3780496395529!3d-22.971989899908685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd903fbb3965d%3A0xc8d4464179cc366e!2sShopping%20Metropolitano%20Barra!5e0!3m2!1spt-BR!2sbr!4v1734724938250!5m2!1spt-BR!2sbr"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <iframe id="mapa"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6177.912598537907!2d-43.3780496395529!3d-22.971989899908685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd903fbb3965d%3A0xc8d4464179cc366e!2sShopping%20Metropolitano%20Barra!5e0!3m2!1spt-BR!2sbr!4v1734724938250!5m2!1spt-BR!2sbr"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!--Formulário de Contato-->
+        <form action="" id="form-contato">
+          <h3>Envie-nos<span> Uma mensagem</span></h3>
+          <label for="nome">Nome:</label>
+          <input id="nome" type="text" placeholder="Informe seu nome aqui" required>
+          <label for="email">E-mail:</label>
+          <input id="email" type="email" placeholder="Informe um email para resposta" required>
+          <label for="mensagem">Mensagem:</label>
+          <textarea name="mensagem" id="mensagem" maxlength="500" placeholder="Digite sua mensagem aqui.."
+            required></textarea>
+          <button type="submit" class="btn"><i class="bi bi-envelope-fill"></i> Enviar</button>
+        </form>
       </div>
-      <form action="" id="form-contato">
-        <h3>Envie-nos<span> Uma mensagem</span></h3>
-        <label for="nome">Nome:</label>
-        <input id="nome" type="text" placeholder="Informe seu nome aqui" required>
-        <label for="email">E-mail:</label>
-        <input id="email" type="email" placeholder="Informe um email para resposta" required>
-        <label for="mensagem">Mensagem:</label>
-        <textarea name="mensagem" id="mensagem" maxlength="500" placeholder="Digite sua mensagem aqui.."
-          required></textarea>
-        <button type="submit" class="btn"><i class="bi bi-envelope-fill"></i> Enviar</button>
-      </form>
     </section>
+
     <!--Footer-->
     <footer>
       <div id="div-links-footer">
         <a id="logo-footer" href="">
-          <img src="assets/Icon-EF.png" alt="">
+          <img src="assets/Icon-EF.png" alt="Logo da Elevate Fitness">
         </a>
-
+        <!--Bloco com os links da página-->
         <div class="divs-footer">
           <a class="Subtitulo-links" href="">SOBRE</a>
-          <a class="links-footer" href="">Orientação Estratégica</a>
-          <a class="links-footer" href="">Nossa Equipe</a>
-          <a class="links-footer" href="">Nossa Academia</a>
+          <a class="links-footer" href="">Estratégia</a>
+          <a class="links-footer" href="">Equipe</a>
+          <a class="links-footer" href="">Academia</a>
         </div>
         <div class="divs-footer">
           <a class="Subtitulo-links" href="">TREINOS</a>
@@ -474,7 +478,7 @@
           <a class="Subtitulo-links" href="">CONTATO</a>
           <a class="links-footer" href="">Fale Conosco</a>
         </div>
-
+        <!--Icones de links para redes sociais-->
         <div class="social">
           <a href=""><i class="bi bi-instagram"></i></a>
           <a href=""><i class="bi bi-facebook"></i></a>
@@ -482,6 +486,7 @@
           <a href=""><i class="bi bi-whatsapp"></i></a>
         </div>
       </div>
+      <!--Bloco Copyright-->
       <div id="div-copyright">
         <p><i class="bi bi-c-circle"></i> 2024 Elevate Fitness - Todos os direitos reservados.</p>
         <p>Desenvolvido por <a href="">Daniel Perfeito</a></p>
@@ -489,5 +494,4 @@
     </footer>
   </main>
 </body>
-
 </html>

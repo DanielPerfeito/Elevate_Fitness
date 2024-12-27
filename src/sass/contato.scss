@@ -1,61 +1,111 @@
 // Section contato
-
-#contato{
+#contato {
     background-color: $cor-escura;
 
     @include display-layout(flex, column, center, center, 15px);
     font-family: $fonte-padrao;
-    padding: 40px 0;
+    padding: 60px 0 80px;
     color: $cor-clara;
 
-    h2{
+    h2 {
         font-size: $fonte-size-titulo;
     }
 
-    #endereco{
-        @include display-layout(flex, column, center, center, 5px);
+    #div-contato {
+        width: 100%;
+        @include display-layout(flex, column, center, center, 30px);
 
-        p{
+        @media screen and (min-width: 1150px) {
+            @include display-layout(flex, row, center, center, 15px);
             width: 90%;
-            text-align: center;
         }
-    }
 
-    #mapa{
-        width: 100%;
-        height: 300px;
-        border-bottom: solid 8px $cor-vermelho-claro;
-    }
+        #div-endereco {
+            @include display-layout(flex, column, center, center, 15px);
+            
+            @media screen and (min-width: 1150px) {
+                width: 50%;
+            }
 
-    #form-contato{
-        @include display-layout(flex, column, center, center, 5px);
-        width: 100%;
-        padding: 0 25px;
+            #endereco {
+                @include display-layout(flex, column, center, center, 5px);
 
-        input{
+                @media screen and (min-width: 1150px) {
+                    @include display-layout(flex, column, center, center, 0);
+                }
+
+                p {
+                    text-align: center;
+
+                    @media screen and (min-width: 1150px) {
+                        margin: 0;
+                        font-size: 1.2rem; 
+                    }
+                }
+            }
+
+            #mapa {
+                width: 100%;
+                height: 300px;
+                border-bottom: solid 8px $cor-vermelho-claro;
+                overflow: hidden;
+            }
+        }
+
+        //Formulário para contato via email
+        #form-contato {
+            @include display-layout(flex, column, center, center, 5px);
             width: 100%;
-            padding: 5px 15px;
-            border-radius: 5px;
-        }
+            padding: 0 25px;
 
-        textarea{
-            width: 100%;
-            padding: 5px 15px;
-            border-radius: 5px;
-        }
+            @media screen and (min-width: 1150px) {
+                width: 50%;
+            }
 
-        button{
-            margin-top: 25px;
+            h3{
+    
+                @media screen and (min-width: 1150px) {
+                    margin-bottom: 50px;
+                }
+            }
+
+            input {
+                width: 100%;
+                padding: 5px 15px;
+                border-radius: 5px;
+            }
+
+            textarea {
+                width: 100%;
+                padding: 5px 15px;
+                border-radius: 5px;
+
+                &::-webkit-scrollbar{
+                    width: 10px;
+                    
+                    border-radius: 2px;
+                    border: none;
+                }
+
+                &::-webkit-scrollbar-thumb{
+                    background-color: $cor-vermelho-claro;
+                    border-radius: 2px;
+                }
+            }
+
+            button {
+                margin-top: 25px;
                 color: $cor-vermelho-claro;
                 text-decoration: none;
                 border: solid 2.5px $cor-vermelho-claro;
                 width: 100%;
+                padding: 15px;
 
                 &:hover {
                     color: $cor-clara;
                     background-color: $cor-vermelho-claro;
                 }
+            }
         }
     }
-
 }

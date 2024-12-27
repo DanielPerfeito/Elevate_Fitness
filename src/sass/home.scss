@@ -11,7 +11,6 @@
 
         @media screen and (min-width: 768px) {
             @include box-layout(70%, 100%, 0, 0, none);
-
         }
 
         /*Video do background*/
@@ -35,12 +34,8 @@
             #nav-bar-menu {
                 display: none;
 
-
-
                 @media screen and (min-width: 768px) {
                     @include display-layout(flex, row, center, center, 50px);
-                   
-                    
                     font-family: $fonte-padrao;
                     text-decoration: none;
 
@@ -58,8 +53,7 @@
                     #chamada-action-head {
                         background-image: linear-gradient(to top, $cor-vermelho-escuro, $cor-vermelho-claro );
                         padding: 10px 20px;
-
-                        border-radius: 25px;
+                        border-radius: 10px;
                         text-decoration: none;
                         color: $cor-clara;
                         font-family: $fonte-padrao;
@@ -71,7 +65,6 @@
                             color: $cor-clara;
                             transform: scale(1.05);
                         }
-
                     }
                 }
             }
@@ -93,7 +86,6 @@
 
                 @media screen and (min-width: 768px) {
                     display: none;
-
                 }
             }
         }
@@ -105,8 +97,6 @@
                 height: 70%;
             }
         }
-        
-
     }
 
     /*Slogan*/
@@ -114,12 +104,10 @@
         @include display-layout(flex, column, start, center, 40px);
         @include box-layout(50%, 100%, 0, 0, none);
         background-color: $cor-escura;
-        
 
         @media screen and (min-width: 768px) {
             @include display-layout(flex, column, center, center, 40px);
             @include box-layout(30%, 100%, 0, 0, none);
-
         }
 
         #h1-1 {
@@ -132,7 +120,6 @@
 
             @media screen and (min-width: 768px) {
                 display: none;
-
             }
         }
 
@@ -147,11 +134,7 @@
 
             @media screen and (min-width: 768px) {
                 display: flex;
-                
-
             }
-
-            
         }
 
         #chamada-action-02 {
@@ -165,7 +148,7 @@
             font-size: 1.2rem;
             transition: .4s;
 
-            @media screen and (min-width: 768px){
+            @media screen and (min-width: 768px) {
                 display: none;
             }
 

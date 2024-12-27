@@ -1,66 +1,89 @@
 // Footer
-
-footer{
+footer {
     @include display-layout(flex, column, center, center, 15px);
     background-color: $cor-vermelho-claro;
     font-family: $fonte-padrao;
-    padding: 40px 25px;
-    
+    padding: 40px 25px 25px;
 
-    a{
+    a {
         text-decoration: none;
         color: $cor-clara;
         text-shadow: 2px 2px 2px $cor-escura;
         transition: .4s;
 
-        &:hover{
-            transform: scale(1.2);
+        &:hover {
+            transform: scale(1.1);
         }
     }
-    
 
-    #div-links-footer{
+    #div-links-footer {
         @include display-layout(flex, column, center, center, 20px);
         color: $cor-clara;
 
-        #logo-footer{
-            
-            img{
+        @media screen and (min-width:950px) {
+            @include display-layout(flex, row, center, start, 15px);
+            width: 70%;
+        }
+
+        #logo-footer {
+            img {
                 height: 100px;
                 filter: drop-shadow(2px 5px 1px $cor-escura);
+
+                @media screen and (min-width:950px) {
+                    margin-right: 100px;
+                }
             }
         }
 
-        .divs-footer{
+        .divs-footer {
             @include display-layout(flex, column, center, center, 0);
+            width: 300px;
 
-           .Subtitulo-links{
-            font-size: $fonte-size-subtitulo;
-           }
+            @media screen and (min-width:950px) {
+                @include display-layout(flex, column, center, center, 0);
+            }
 
-           a{
-            font-size: $fonte-size-texto
-           }
+            .Subtitulo-links {
+                font-size: $fonte-size-subtitulo;
+            }
+
+            a {
+                text-align: center;
+                width: 100%;
+
+                @media screen and (min-width:950px) {
+                    text-align: left;
+                    ;
+                }
+            }
         }
 
-        .social{
+        .social {
             @include display-layout(flex, row, center, center, 25px);
-            width: 100%;
 
-            a{
+            a {
                 font-size: 2rem;
 
                 &:hover {
                     color: $cor-clara;
                     transform: scale(1.4);
                 }
-            };
+            }
         }
     }
 
-    #div-copyright{
+    #div-copyright {
         @include display-layout(flex, column, center, center, 0);
-
         color: $cor-vermelho-escuro;
+
+        @media screen and (min-width:950px) {
+            @include display-layout(flex, row, center, center, 50px);
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
     }
 }

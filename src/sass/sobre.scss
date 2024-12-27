@@ -18,16 +18,15 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        
+
 
         #filtro-01 {
             padding: 15px;
             background-image: linear-gradient(to top, #000000, #ffffff25);
             width: 100%;
 
-            @media screen and (min-width: 1150px){
-
-                padding: 80px 50px;
+            @media screen and (min-width: 1150px) {
+                padding: 50px;
             }
 
             #container-texto-sobre {
@@ -35,7 +34,7 @@
                 width: 100%;
                 padding: 30px;
 
-                @media screen and (min-width: 1150px){
+                @media screen and (min-width: 1150px) {
 
                     @include display-layout(flex, row, center, center, 15px);
                     padding: 0 0 100px;
@@ -45,15 +44,10 @@
                     width: 200px;
                     filter: drop-shadow(2px 5px 1px $cor-escura);
 
-
-
-                    @media screen and (min-width: 1150px){
+                    @media screen and (min-width: 1150px) {
                         width: 300px;
-    
                         padding: 0 30px 70px 0;
-
                         border-right: solid 8px $cor-vermelho-claro;
-                
                     }
                 }
 
@@ -63,14 +57,11 @@
                     margin-bottom: 50px;
                     text-shadow: $cor-escura 2px 2px 2px;
 
-                    
-
-                    @media screen and (min-width: 1150px){
+                    @media screen and (min-width: 1150px) {
                         margin: 0;
                         padding-left: 30px;
                         text-align: left;
                         width: 50%;
-                
                     }
                 }
             }
@@ -85,8 +76,7 @@
         background-color: $cor-escura;
 
         @media screen and (min-width: 950px) {
-           padding: 80px 50px;
-            
+            padding: 80px 50px;
         }
 
         h2 {
@@ -99,7 +89,6 @@
 
             @media screen and (min-width: 950px) {
                 @include display-layout(flex, row, center, center, 0);
-                
             }
 
             .card-VE {
@@ -108,13 +97,9 @@
                 text-align: center;
                 color: $cor-clara;
 
-
                 @media screen and (min-width: 950px) {
                     @include box-layout(420px, 400px, 0, 20px, 0);
-
                 }
-
-
 
                 img {
                     height: 20%;
@@ -184,7 +169,6 @@
 
     /*Equipe*/
     #equipe {
-
         width: 100%;
         @include display-layout(flex, column, center, center, 20px);
         background-image: url(./assets/back-professores.png);
@@ -193,17 +177,14 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
 
-        
-
         #filtro-02 {
             @include display-layout(flex, column, center, center, 15px);
-            background-image: linear-gradient(to top,  #ffffff25, #000000);
+            background-image: linear-gradient(to top, #ffffff25, #000000);
             width: 100%;
             padding: 15px 30px 50px;
 
-            @media screen and (min-width: 1150px){
-
-                padding: 80px 50px;
+            @media screen and (min-width: 1150px) {
+                padding: 60px 50px;
             }
 
             h2 {
@@ -234,7 +215,7 @@
                         border-radius: 0;
                     }
 
-                    &:hover {                       
+                    &:hover {
 
                         img {
                             transform: scale(1.1);
@@ -310,17 +291,24 @@
 
         .nossa-academia {
             @include display-layout(flex, column, center, center, 0);
-           
+
+            @media screen and (min-width: 1150px) {}
+
             p {
                 @include box-layout(auto, auto, 0, 20px, 10px 10px 0 0);
                 text-align: center;
                 color: $cor-clara;
+
+                @media screen and (min-width: 1150px) {}
+
             }
 
             #carouselExampleCaptions {
                 max-width: 500px;
-                max-height: 500px;
+                max-height: 800px;
                 border-bottom: solid 8px $cor-vermelho-claro;
+
+                @media screen and (min-width: 1150px) {}
 
                 h5 {
                     text-shadow: 1px 1px 1px $cor-escura;

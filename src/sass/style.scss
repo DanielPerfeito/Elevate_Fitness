@@ -9,7 +9,6 @@ $fonte-size-titulo: 2.8rem;
 $fonte-size-subtitulo: 1.8rem;
 $fonte-size-texto: 1.2rem;
 
-
 /*Comuns*/
 *{
     margin: 0;
@@ -20,8 +19,6 @@ $fonte-size-texto: 1.2rem;
 span{
     color: $cor-vermelho-claro;
 }
-
-
 
 /*Mixins*/
 
@@ -52,6 +49,18 @@ span{
 body{
     font-family: $fonte-padrao;
     font-weight: bold;
+
+    &::-webkit-scrollbar{
+        width: 10px;
+        background-color: $cor-escura;
+        border-radius: 2px;
+        border: none;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-image: linear-gradient(to top, $cor-vermelho-escuro, $cor-vermelho-claro );
+        border-radius: 2px;
+    }
 }
 
 /*Imports*/

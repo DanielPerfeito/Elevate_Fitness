@@ -1,11 +1,15 @@
 /*SEÇÃO TREINOS*/
 #treinos {
     @include display-layout(flex, column, center, center, 40px);
-    padding: 40px 0px 0;
+    padding: 40px 0 0;
     background-image: url(./assets/background-alteres-gym.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+    @media screen and (min-width: 768px) {
+        padding: 40px 0;
+    }
 
     h2 {
         @include text-layout($fonte-padrao, $fonte-size-titulo, none, none, $cor-clara);
@@ -22,8 +26,13 @@
 
     /*Div Treinos*/
     #div-treinos {
-
         @include display-layout(flex, column, center, center, 10px);
+
+        @media screen and (min-width: 768px) {
+            @include display-layout(flex, row, center, center, 50px);
+            flex-wrap: wrap;
+            max-width: 1030px;
+        }
 
         /*Cards de Treino*/
         .card-treino {
@@ -33,10 +42,17 @@
             width: 300px;
             height: 300px;
             padding: 10px 25px;
-            border-left: solid 5px $cor-vermelho-claro;
+            border-left: solid 8px $cor-vermelho-claro;
+            box-shadow: 2px 2px 2px $cor-escura;
             border-radius: 0 10px 10px 0;
-            background-color: #00000085;
+            background-color: #000000d3;
             transition: .4s;
+
+            @media screen and (min-width: 768px) {
+                border-bottom: solid 8px $cor-vermelho-claro;
+                border-left: none;
+                border-radius: 10px 10px 0 0;
+            }
 
             &:hover {
                 background-color: $cor-escura;
@@ -68,65 +84,77 @@
         }
     }
 
-    #div-calc-IMC{
+    #div-calc-IMC {
         @include display-layout(flex, column, center, center, 10px);
         background-color: #000000b2;
         padding: 25px 25px 50px;
-
         text-align: center;
         color: $cor-clara;
         font-family: $fonte-padrao;
-
         border-top: solid 3px $cor-vermelho-claro;
         border-bottom: solid 3px $cor-vermelho-claro;
 
-        h2{
-            font-size: $fonte-size-subtitulo;
+        p {
+            max-width: 700px;
+            font-size: 1.3rem;
         }
 
-        #calc-IMC{
+        h2 {
+            font-size: $fonte-size-subtitulo;
+            max-width: 700px;
+        }
 
+        #calc-IMC {
             @include display-layout(flex, column, center, center, 10px);
             width: 100%;
 
-            form{
-                @include display-layout(flex, column, center, center, 5px);
+            form {
+                @include display-layout(none, column, center, center, 5px);
                 width: 100%;
-                input, button{
+
+                @media screen and (min-width:768px) {
+                    width: 600px;
+                }
+
+                input,
+                button {
                     width: 100%;
                     padding: 5px 15px;
                     border-radius: 5px;
                 }
 
-                button{
-                margin-top: 10px;
-                color: $cor-vermelho-claro;
-                text-decoration: none;
-                border: solid 2.5px $cor-vermelho-claro;
+                button {
+                    margin-top: 10px;
+                    color: $cor-vermelho-claro;
+                    text-decoration: none;
+                    border: solid 2.5px $cor-vermelho-claro;
 
-                &:hover {
-                    color: $cor-clara;
-                    background-color: $cor-vermelho-claro;
-                }
-
-                }
-            }
-
-            #resultado{
-                button{
-                margin-top: 10px;
-                color: $cor-vermelho-claro;
-                text-decoration: none;
-                border: solid 2.5px $cor-vermelho-claro;
-                width: 100%;
-
-                &:hover {
-                    color: $cor-clara;
-                    background-color: $cor-vermelho-claro;
-                }
+                    &:hover {
+                        color: $cor-clara;
+                        background-color: $cor-vermelho-claro;
+                    }
                 }
             }
 
+            #resultado {
+
+                @media screen and (min-width:768px) {
+                    width: 600px;
+                }
+
+                button {
+                    margin-top: 10px;
+                    color: $cor-vermelho-claro;
+                    text-decoration: none;
+                    border: solid 2.5px $cor-vermelho-claro;
+                    width: 100%;
+
+                    &:hover {
+                        color: $cor-clara;
+                        background-color: $cor-vermelho-claro;
+                    }
+                }
+            }
         }
     }
 }
