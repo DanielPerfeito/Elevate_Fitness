@@ -627,7 +627,7 @@ body::-webkit-scrollbar-thumb {
 #sobre #equipe #filtro-02 #container-professores .card .card-img-overlay .info-card .social-links:hover {
   color: #b10808;
 }
-#sobre .academia {
+#sobre #academia {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -637,7 +637,7 @@ body::-webkit-scrollbar-thumb {
   padding: 40px 0px;
   background-color: #000000;
 }
-#sobre .academia h2 {
+#sobre #academia h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.8rem;
   font-weight: none;
@@ -645,14 +645,14 @@ body::-webkit-scrollbar-thumb {
   color: #ffffff;
   margin: 0;
 }
-#sobre .academia .nossa-academia {
+#sobre #academia #nossa-academia {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0;
 }
-#sobre .academia .nossa-academia p {
+#sobre #academia #nossa-academia p {
   height: auto;
   width: auto;
   margin: 0;
@@ -661,15 +661,15 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   color: #ffffff;
 }
-#sobre .academia .nossa-academia #carouselExampleCaptions {
+#sobre #academia #nossa-academia #carouselExampleCaptions {
   max-width: 500px;
   max-height: 800px;
   border-bottom: solid 8px #b10808;
 }
-#sobre .academia .nossa-academia #carouselExampleCaptions h5 {
+#sobre #academia #nossa-academia #carouselExampleCaptions h5 {
   text-shadow: 1px 1px 1px #000000;
 }
-#sobre .academia a {
+#sobre #academia a {
   width: 320px;
   background-image: linear-gradient(to top, #5a0303, #b10808);
   padding: 10px 15px;
@@ -682,7 +682,7 @@ body::-webkit-scrollbar-thumb {
   transition: 0.4s;
   border: none;
 }
-#sobre .academia a:hover {
+#sobre #academia a:hover {
   color: #ffffff;
   transform: scale(1.05);
 }
