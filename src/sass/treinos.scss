@@ -109,7 +109,7 @@
             width: 100%;
 
             form {
-                @include display-layout(none, column, center, center, 5px);
+                @include display-layout(flex, column, center, center, 5px);
                 width: 100%;
 
                 @media screen and (min-width:768px) {
@@ -138,6 +138,7 @@
 
             #resultado {
 
+                @include display-layout(none, column, center, center, 10px);
                 @media screen and (min-width:768px) {
                     width: 600px;
                 }

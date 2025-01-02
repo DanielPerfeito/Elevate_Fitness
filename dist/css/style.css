@@ -817,7 +817,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 #treinos #div-calc-IMC #calc-IMC form {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -844,6 +844,13 @@ body::-webkit-scrollbar-thumb {
 #treinos #div-calc-IMC #calc-IMC form button:hover {
   color: #ffffff;
   background-color: #b10808;
+}
+#treinos #div-calc-IMC #calc-IMC #resultado {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 @media screen and (min-width: 768px) {
   #treinos #div-calc-IMC #calc-IMC #resultado {
@@ -992,7 +999,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 #treinos #div-calc-IMC #calc-IMC form {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1019,6 +1026,13 @@ body::-webkit-scrollbar-thumb {
 #treinos #div-calc-IMC #calc-IMC form button:hover {
   color: #ffffff;
   background-color: #b10808;
+}
+#treinos #div-calc-IMC #calc-IMC #resultado {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 @media screen and (min-width: 768px) {
   #treinos #div-calc-IMC #calc-IMC #resultado {

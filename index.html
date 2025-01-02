@@ -22,7 +22,8 @@
     crossorigin="anonymous"></script>
 
   <!--Scripts Javascript-->
-  <script src="./src/js/index.js" defer></script>
+  <script src="./src/js/index.js" type="module" defer></script>
+  <script src="src/js/calc-imc.js" defer></script>
 </head>
 
 <body>
@@ -48,7 +49,7 @@
           </nav>
 
           <!--Botão para abrir menu lateral (Ativo somente no mobile)-->
-          <button id="btn-menu-retratil-abrir" class="btn" onclick="abrirMenu()">
+          <button id="btn-menu-retratil-abrir" class="btn">
             <i class="bi bi-list"></i>
           </button>
         </div>
@@ -69,15 +70,15 @@
     <!--Menu Retratil para mobile-->
     <nav id="menu-retratil-mobile">
       <!--Botão para fechar o menu-->
-      <button id="btn-menu-retratil-fechar" class="btn" onclick="fecharMenu()">
+      <button id="btn-menu-retratil-fechar" class="btn">
         <i class="bi bi-x-lg m-1"></i>
       </button>
       <!--Logo e Links-->
       <img id="icone-logo" src="./assets/Icon-EF.png" alt="logo-EF">
-      <a href="#home" onclick="fecharMenu()">HOME</a>
-      <a href="#sobre" onclick="fecharMenu()">SOBRE</a>
-      <a href="#treinos" onclick="fecharMenu()">TREINOS</a>
-      <a href="#contato" onclick="fecharMenu()">CONTATO</a>
+      <a href="#home" class="links-menu-retratil">HOME</a>
+      <a href="#sobre" class="links-menu-retratil">SOBRE</a>
+      <a href="#treinos" class="links-menu-retratil">TREINOS</a>
+      <a href="#contato" class="links-menu-retratil">CONTATO</a>
       <p>&copy 2024 Elevate fitness</p>
     </nav>
 
@@ -405,19 +406,14 @@
             <input type="number" id="peso" name="peso" placeholder="Ex.. 89" required>
             <label for="altura">Altura (m):</label>
             <input type="number" id="altura" name="altura" step="0.01" placeholder="Ex.. 1.83" required>
-            <button type="submit" class="btn"> <i class="bi bi-calculator"></i> Calcular IMC</button>
+            <button type="button" id="btn-calcular" class="btn"> <i class="bi bi-calculator"></i> Calcular IMC</button>
           </form>
           <!--Area de exibição do resultado-->
           <div id="resultado" class="">
             <h2>Resultado:</h2>
-            <p id="imc-value"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maiores ullam molestias
-              veritatis, dolorum tenetur? Similique fugit aspernatur saepe, doloremque sed, nobis eum tempore laborum ab
-              officiis, eos aliquam accusamus.
+            <p id="resultado-imc"> 
             </p>
-            <p id="imc-category"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem mollitia architecto
-              reprehenderit qui consequuntur vitae aut sapiente voluptate eveniet totam soluta blanditiis id et non,
-              voluptatibus adipisci cumque impedit voluptatum.</p>
-            <button type="button" class="btn"><i class="bi bi-arrow-repeat"></i> Calcular novamente</button>
+            <button type="button" id="btn-recalcular" class="btn"><i class="bi bi-arrow-repeat"></i> Calcular novamente</button>
           </div>
         </div>
       </div>

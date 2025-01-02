@@ -1,9 +1,15 @@
-const menuRetratilMobile = document.getElementById("menu-retratil-mobile");
+//Menu Retratil Mobile
+import * as menuRetratil from './menu-retratil.js';
 
-function abrirMenu(){
-    menuRetratilMobile.style.height = "60vh"
-}
+menuRetratil.btnAbrirMenu.addEventListener("click", menuRetratil.abrirMenu);
+menuRetratil.btnFecharMenu.addEventListener("click", menuRetratil.fecharMenu);
 
-function fecharMenu(){
-    menuRetratilMobile.style.height = "0px"
-}
+menuRetratil.linksMenuRetratil.forEach(link => {
+    link.addEventListener("click", menuRetratil.fecharMenu);
+});
+
+// Calculadora de IMC
+import * as calcIMC from './calc-imc.js';
+
+calcIMC.btnCalcular.addEventListener("click", calcIMC.calcularIMC);
+calcIMC.btnRecalcular.addEventListener("click", calcIMC.reiniciarFormulario);
