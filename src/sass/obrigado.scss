@@ -1,0 +1,37 @@
+#main-obrigado{
+    @include display-layout(flex, column, center, center, 15px);
+    padding: 30px;
+    background-image: linear-gradient( 45deg, $cor-escura 80%, $cor-vermelho-escuro);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-family: $fonte-padrao;
+    color: $cor-clara;
+
+    img {
+       width: 100px;
+        
+    }
+
+    h1{
+        color: $cor-vermelho-claro;
+    }
+
+    h2{
+        
+    }
+
+    #btn-voltar-site{
+        margin-top: 25px;
+        color: $cor-vermelho-claro;
+        text-decoration: none;
+        border: solid 2.5px $cor-vermelho-claro;
+        width: 300px;
+        padding: 15px;
+
+        &:hover {
+            color: $cor-clara;
+            background-color: $cor-vermelho-claro;
+        }
+    }
+}

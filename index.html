@@ -438,16 +438,35 @@
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <!--Formulário de Contato-->
-        <form action="" id="form-contato">
+        <form action="https://formsubmit.co/dp.ribeiro.1996@gmail.com" method="POST" id="form-contato">
           <h3>Envie-nos<span> Uma mensagem</span></h3>
           <label for="nome">Nome:</label>
-          <input id="nome" type="text" placeholder="Informe seu nome aqui" required>
+          <input id="nome" name="Nome" type="text" placeholder="Informe seu nome aqui" required>
           <label for="email">E-mail:</label>
-          <input id="email" type="email" placeholder="Informe um email para resposta" required>
+          <input id="email" name="E-mail" type="email" placeholder="Informe um email para resposta" required>
           <label for="mensagem">Mensagem:</label>
-          <textarea name="mensagem" id="mensagem" maxlength="500" placeholder="Digite sua mensagem aqui.."
+          <textarea name="Mensagem" id="mensagem" maxlength="500" placeholder="Digite sua mensagem aqui.."
             required></textarea>
-          <button type="submit" class="btn"><i class="bi bi-envelope-fill"></i> Enviar</button>
+            <button type="submit" class="btn"><i class="bi bi-envelope-fill"></i> Enviar</button>
+
+          <!--Configurações formsubmit-->
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+          <input type="hidden" name="_subject" value="Nova mensagem para Elevate Fitness">
+          <input type="hidden" name="_autoresponse" value="Olá!
+          Agradecemos por entrar em contato com a Elevate Fitness! Gostaríamos de informar que este é um negócio fictício, criado como parte de um projeto para meu portfólio e demonstração de habilidades técnicas.
+          
+          Fico feliz por você ter testado este projeto! Caso tenha interesse, confira mais sobre meu trabalho nos links abaixo:
+          
+          🌐 Portfólio: https://danielperfeito.dev.br/
+
+          💼 LinkedIn: https://www.linkedin.com/in/danielperfeito-/
+          
+          Sou desenvolvedor front-end e ofereço serviços de criação de sites modernos, responsivos e personalizados. Entre em contato, será um prazer colaborar no seu projeto!
+          
+          Atenciosamente,
+          Daniel Perfeito
+         ">
+          <input type="hidden" name="_template" value="basic">
         </form>
       </div>
     </section>

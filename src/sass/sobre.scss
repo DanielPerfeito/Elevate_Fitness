@@ -81,7 +81,7 @@
 
         h2 {
             @include text-layout($fonte-padrao, $fonte-size-subtitulo, none, none, $cor-clara);
-            margin: 15px
+            margin: 15px 15px 40px;
         }
 
         #visao-estrategica-cards {
