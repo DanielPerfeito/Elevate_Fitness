@@ -17,15 +17,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
   <!--Scripts Bootstrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
+  <!--Scripts via CDN-->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
   <!--Scripts Javascript-->
   <script src="./src/js/index.js" type="module" defer></script>
   <script src="src/js/calc-imc.js" defer></script>
+  
 </head>
 
 <body>
@@ -63,8 +67,8 @@
       </header>
       <!--slogan-->
       <div id="slogan">
-        <h1 id="h1-1">Eleve-se,<br>Supere-se,<br>Transforme-se!</h1>
-        <h1 id="h1-2">Eleve-se, Supere-se, Transforme-se!</h1>
+        <h1 id="h1-1" class="efeito-de-escrever">Eleve-se,<br>Supere-se,<br>Transforme-se!</h1>
+        <h1 id="h1-2" class="efeito-de-escrever">Eleve-se, Supere-se, Transforme-se!</h1>
         <!--botão de chamada para ação-->
         <a href="https://web.whatsapp.com/" id="chamada-action-02" clas="btn" target="_blank">Agendar aula experimental
           <i class="bi bi-whatsapp"></i></a>
@@ -92,8 +96,8 @@
       <!--Texto Sobre-->
       <div id="div-texto-sobre">
         <div id="filtro-01">
-          <h2>QUEM <span>SOMOS</span></h2>
-          <div id="container-texto-sobre">
+          <h2 class="para-revelar-top">QUEM <span>SOMOS</span></h2>
+          <div id="container-texto-sobre" class="para-revelar-top">
             <img src="assets/Icon-EF.png" alt="Logo Elevate Fitness">
             <p id="texto-sobre">
               Elevando seus Limites desde 2017 A Elevate Fitness foi fundada com um propósito claro: transformar vidas
@@ -113,10 +117,10 @@
 
       <!--Visão estratégica-->
       <div id="visao-estrategica">
-        <h2>Visão <span>Estratégica</span></h2>
-        <div id="visao-estrategica-cards">
+        <h2 class="para-revelar-top">Visão <span>Estratégica</span></h2>
+        <div id="visao-estrategica-cards" class="para-revelar-top">
           <!--Missão-->
-          <div id="card-missao" class="card-VE">
+          <div id="card-missao" class="card-VE ">
             <img src="assets/icon-missão.png" alt="Icone Missão">
             <h3>Missão</h3>
             <p>Elevar a autoestima e a confiança por meio de exercícios físicos, promovendo saúde, bem-estar e
@@ -149,8 +153,8 @@
       <!--Equipe-->
       <div id="equipe">
         <div id="filtro-02">
-          <h2>Nossa <span>Equipe</span></h2>
-          <div id="container-professores">
+          <h2 class="para-revelar-top">Nossa <span>Equipe</span></h2>
+          <div id="container-professores" class="para-revelar-top">
             <!--Personal Cleiton Silva-->
             <div class="card">
               <img src="assets/Personal-Cleiton-Silva.jpg" class="card-img" alt="Foto do personal Cleiton Silva">
@@ -245,9 +249,9 @@
 
       <!--Academia-->
       <div id="academia">
-        <h2>Nossa <span>Academia</span></h2>
+        <h2 class="para-revelar-top">Nossa <span>Academia</span></h2>
 
-        <div id="nossa-academia">
+        <div id="nossa-academia" class="para-revelar-top">
           <p>Oferecemos espaços modernos e bem equipados, planejados para garantir conforto, <br>segurança e uma
             experiência única. Venha treinar com a gente e eleve seus limites!</p>
 
@@ -341,17 +345,17 @@
           </div>
         </div>
         <!--Link Instagram-->
-        <a href="https://www.instagram.com/" class="btn" target="_blank"> Ver Mais <i class="bi bi-instagram"></i></a>
+        <a href="https://www.instagram.com/" class="btn para-revelar-top" target="_blank"> Ver Mais <i class="bi bi-instagram"></i></a>
       </div>
     </section>
 
     <!--Seção Treinos-->
     <section id="treinos">
-      <h2>Nossos <span>Treinos</span></h2>
+      <h2 class="para-revelar-top">Nossos <span>Treinos</span></h2>
       <!--Div Cards de treino-->
       <div id="div-treinos">
         <!--Musculação-->
-        <div class="card-treino">
+        <div class="card-treino para-revelar-top">
           <img src="./assets/icon-musculacao.png" alt="Icone de Musculação">
           <h3>Musculação</h3>
           <p>Ganhe força, resistência e conquiste seu corpo ideal com treinos personalizados.</p>
@@ -359,7 +363,7 @@
             uma Gratis </a>
         </div>
         <!--Treino Funcional-->
-        <div class="card-treino">
+        <div class="card-treino para-revelar-top">
           <img src="./assets/icon-funcional.png" alt="Icone treino funcional">
           <h3>Treino Funcional</h3>
           <p>Melhore a coordenação e condicionamento com exercícios dinâmicos.</p>
@@ -367,7 +371,7 @@
             uma Gratis </a>
         </div>
         <!--HIIT-->
-        <div class="card-treino">
+        <div class="card-treino para-revelar-top">
           <img src="./assets/icon-HIIT.png" alt="Icone treino HIIT">
           <h3>HIIT</h3>
           <p>Queime calorias rapidamente com sessões intensas e práticas.</p>
@@ -375,7 +379,7 @@
             uma Gratis </a>
         </div>
         <!--Yoga-->
-        <div class="card-treino">
+        <div class="card-treino para-revelar-top">
           <img src="./assets/icon-yoga.png" alt="Icone Yoga">
           <h3>Yoga</h3>
           <p>Equilíbrio e relaxamento para corpo e mente, com flexibilidade e força.</p>
@@ -383,7 +387,7 @@
             uma Gratis </a>
         </div>
         <!--Pilates-->
-        <div class="card-treino">
+        <div class="card-treino para-revelar-top">
           <img src="./assets/icon-pilates.png" alt="Icone Pilates">
           <h3>Pilates</h3>
           <p>Aumente a flexibilidade, postura e bem estar com movimentos controlados.</p>
@@ -391,7 +395,7 @@
             uma Gratis </a>
         </div>
         <!--Zumba-->
-        <div class="card-treino">
+        <div class="card-treino para-revelar-top">
           <img src="./assets/icon-zumba.png" alt="Icone Zumba">
           <h3>zumba</h3>
           <p>Divirta-se enquanto queima calorias ao som de músicas animadas.</p>
@@ -400,10 +404,10 @@
         </div>
       </div>
       <!--Observação de horários-->
-      <h3><i class="bi bi-alarm"></i> Escolha seu horário e venha elevar os seu limites com a gente!</h3>
+      <h3 class="para-revelar-top"><i class="bi bi-alarm"></i> Escolha seu horário e venha elevar os seu limites com a gente!</h3>
 
       <!--Calculadora IMC-->
-      <div id="div-calc-IMC">
+      <div id="div-calc-IMC" class="para-revelar-top">
         <h2>Calcule seu <span>IMC</span></h2>
         <!--Info IMC-->
         <p><i class="bi bi-info-circle"></i> <span>IMC (Índice de Massa Corporal)</span> é uma forma simples de
@@ -432,8 +436,8 @@
 
     <!--Seção Contato-->
     <section id="contato">
-      <h2>NOSSO <span>CONTATO</span></h2>
-      <div id="div-contato">
+      <h2 class="para-revelar-top">NOSSO <span>CONTATO</span></h2>
+      <div id="div-contato" class="para-revelar-top">
         <!--Bloco do endereço e mapa-->
         <div id="div-endereco">
           <!--endereço-->
