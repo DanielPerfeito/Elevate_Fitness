@@ -2,7 +2,7 @@
 #treinos {
     @include display-layout(flex, column, center, center, 40px);
     padding: 40px 0 0;
-    background-image: url(./assets/background-alteres-gym.jpg);
+    background-image: url(../assets/background-alteres-gym.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

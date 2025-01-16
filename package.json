@@ -1,0 +1,20 @@
+{
+  "name": "elevate-fitness",
+  "version": "1.0.0",
+  "description": "Elevate Fitness é um projeto desenvolvido para apresentar uma academia fictícia, destacando sua estrutura, equipe de profissionais e serviços. O site foi criado com foco na experiência do usuário (UX), utilizando design responsivo com a abordagem Mobile First e explorando tecnologias modernas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "webpack-cli": "^6.0.1"
+  }
+}

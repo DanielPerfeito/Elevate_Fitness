@@ -14,7 +14,7 @@
     #div-texto-sobre {
         @include display-layout(flex, column, center, center, 10px);
         text-align: center;
-        background-image: url(./assets/back-02.png);
+        background-image: url(../assets/back-02.png);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -171,7 +171,7 @@
     #equipe {
         width: 100%;
         @include display-layout(flex, column, center, center, 20px);
-        background-image: url(./assets/back-professores.png);
+        background-image: url(../assets/back-professores.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
