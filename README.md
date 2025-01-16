@@ -23,7 +23,7 @@ Todas as artes e a identidade visual do projeto foram criadas de forma criativa 
 **[MIT](https://github.com/DanielPerfeito/Elevate_Fitness/blob/master/LICENSE)** 📄✔️
 
 ## Status
-**Em andamento...** ☑️
+**Concluido** ✅
 
 ## Links
 **Link do deploy:** https://danielperfeito.github.io/Elevate_Fitness/ 💪🏼
