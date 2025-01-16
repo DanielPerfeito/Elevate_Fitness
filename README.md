@@ -27,4 +27,5 @@ Todas as artes e a identidade visual do projeto foram criadas de forma criativa 
 
 ## Links
 **Link do deploy:** https://danielperfeito.github.io/Elevate_Fitness/ 💪🏼
+
 **Link do meu portfólio:** https://danielperfeito.dev.br/ 👨🏻‍💻
